@@ -1,16 +1,259 @@
 {
-  "title":"Tomorrowland Thailand 2026｜Our Journey",
-  "updated":"2026-11-12",
-  "timezone":"Asia/Bangkok",
-  "days":[
-    {"date":"2026-12-09","city":"曼谷","theme":"抵達曼谷・鄭王廟夜景","events":[{"time":"10:35","title":"第一批團員抵達 BKK","type":"flight","status":"confirmed","note":"抵達後安排換匯與午餐"},{"time":"14:00","title":"Asoke 住宿與行李安置","type":"hotel","status":"planned"},{"time":"16:30","title":"星宇航班抵達 BKK","type":"flight","status":"confirmed"},{"time":"17:35","title":"華航航班抵達 BKK","type":"flight","status":"confirmed"},{"time":"19:35","title":"另一組抵達 DMK","type":"flight","status":"confirmed"},{"time":"19:45","title":"Chom Arun 晚餐","type":"food","status":"confirmed","note":"原表註明已訂位；無人機秀時間仍須以官方公告為準","map":"Chom Arun Restaurant Bangkok"},{"time":"19:50","title":"鄭王廟無人機秀（待官方確認）","type":"festival","status":"verify","note":"時間為原表規劃，不代表官方已確認","map":"Wat Arun Bangkok"}]},
-    {"date":"2026-12-10","city":"曼谷 → 羅勇","theme":"泰式合菜・The Gathering","events":[{"time":"09:15","title":"Asoke 集合出發","type":"transport","status":"planned"},{"time":"11:45","title":"Krua Kaeng Phet 午餐","type":"food","status":"planned","map":"Krua Kaeng Phet Rayong"},{"time":"13:00","title":"Central Rayong 逛街","type":"shopping","status":"planned","map":"Central Rayong"},{"time":"15:00","title":"Holiday Inn Express Rayong 入住","type":"hotel","status":"confirmed","map":"Holiday Inn Express Rayong"},{"time":"18:00","title":"The Gathering 官方接駁","type":"transport","status":"verify","note":"需確認 RSVP、搭車地點及班次"}]},
-    {"date":"2026-12-11","city":"羅勇・Wisdom Valley","theme":"Tomorrowland Day 1","events":[{"time":"10:30","title":"包車出發","type":"transport","status":"planned"},{"time":"10:45","title":"Amber Rayong 早午餐","type":"food","status":"planned","map":"Amber Rayong"},{"time":"11:50","title":"Yomjinda 老街散步","type":"shopping","status":"planned","map":"Yomjinda Road Rayong"},{"time":"12:40","title":"Jay Jim 魚餃麵","type":"food","status":"planned","map":"Jay Jim Fish Noodles Rayong"},{"time":"14:15","title":"前往 Tomorrowland 會場","type":"festival","status":"planned","map":"Wisdom Valley Pattaya"}]},
-    {"date":"2026-12-12","city":"羅勇・Wisdom Valley","theme":"Tomorrowland Day 2","events":[{"time":"11:00","title":"包車出發","type":"transport","status":"planned"},{"time":"11:30","title":"AJS 秘密廚房海鮮午餐","type":"food","status":"verify","note":"8 人用餐建議先確認訂位","map":"ร้านลับลับครัวอจส. Rayong"},{"time":"13:30","title":"泰式按摩","type":"activity","status":"planned"},{"time":"15:30","title":"Diamond Air Market 夜市","type":"shopping","status":"planned","map":"Diamond Air Market Rayong"},{"time":"17:30","title":"前往 Tomorrowland 會場","type":"festival","status":"planned","map":"Wisdom Valley Pattaya"}]},
-    {"date":"2026-12-13","city":"羅勇・Wisdom Valley","theme":"Tomorrowland 最終日","events":[{"time":"11:00","title":"包車出發","type":"transport","status":"planned"},{"time":"11:30","title":"Baramee Hoi 海鮮午餐","type":"food","status":"planned","map":"บารมีหอย Rayong"},{"time":"13:30","title":"按摩休息","type":"activity","status":"planned"},{"time":"15:30","title":"Diamond Air Market","type":"shopping","status":"planned","map":"Diamond Air Market Rayong"},{"time":"17:30","title":"前往 Tomorrowland 會場","type":"festival","status":"planned","map":"Wisdom Valley Pattaya"}]},
-    {"date":"2026-12-14","city":"羅勇 → 曼谷","theme":"暹羅商圈・Copper Buffet","events":[{"time":"09:00","title":"羅勇飯店退房出發","type":"transport","status":"planned"},{"time":"12:00","title":"Siam Paragon / Siam Discovery","type":"shopping","status":"planned","map":"Siam Paragon Bangkok"},{"time":"14:00","title":"Siam Square 逛街","type":"shopping","status":"planned","map":"Siam Square Bangkok"},{"time":"16:00","title":"centralwOrld 逛街","type":"shopping","status":"planned","map":"centralwOrld Bangkok"},{"time":"18:00","title":"集合與分組","type":"transport","status":"planned"},{"time":"19:15","title":"Copper Buffet 門口集合","type":"food","status":"verify","map":"Copper Beyond Buffet Gaysorn Amarin"},{"time":"19:30","title":"Copper Beyond Buffet 晚餐","type":"food","status":"verify","note":"訂位狀態請再次確認","map":"Copper Beyond Buffet Gaysorn Amarin"},{"time":"21:30","title":"Big C 採買","type":"shopping","status":"planned","map":"Big C Rajdamri Bangkok"}]},
-    {"date":"2026-12-15","city":"曼谷","theme":"部分團員返台・雙人慢活","events":[{"time":"09:30","title":"返台團員準備前往機場","type":"flight","status":"planned"},{"time":"14:00","title":"Silom / Sathorn 街區慢遊","type":"activity","status":"planned"},{"time":"17:00","title":"ICONSIAM 河岸與夜景","type":"shopping","status":"planned","map":"ICONSIAM Bangkok"}]},
-    {"date":"2026-12-16","city":"曼谷","theme":"老街散步・自由探索","events":[{"time":"10:00","title":"石龍軍路街區與咖啡廳","type":"activity","status":"planned","map":"Charoen Krung Road Bangkok"},{"time":"14:00","title":"自由活動／逛街","type":"shopping","status":"planned"},{"time":"18:00","title":"SPA 或夜景酒吧","type":"activity","status":"planned"}]},
-    {"date":"2026-12-17","city":"曼谷 → 高雄","theme":"最後採買・返台","events":[{"time":"11:00","title":"整理行李與最後採買","type":"shopping","status":"planned"},{"time":"14:30","title":"前往 BKK 機場","type":"transport","status":"planned"},{"time":"18:35","title":"華航 CI0840 起飛","type":"flight","status":"confirmed"},{"time":"22:55","title":"抵達高雄 KHH（台灣時間）","type":"flight","status":"confirmed"}]}
+  "title": "Tomorrowland Thailand 2026｜Our Journey",
+  "updated": "2026-11-12 20:40",
+  "timezone": "Asia/Bangkok",
+  "days": [
+    {
+      "date": "2026-12-09",
+      "city": "曼谷 (Bangkok)",
+      "theme": "夥伴大集結 ＆ 鄭王廟無人機秀 ＆ 曼谷熱身夜",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "泰航組 (Kao/Lin) 07:40起飛、10:35抵達BKK，專車接機 (行李放車上免預放) ➔ 直奔水門市場 SuperRich 換匯，並於水門商圈周邊享用在地午餐",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "14:00 前往 Asoke 公寓辦理入住並卸下行李；司機出發接機前先送泰航組至 Oasis Spa (Bangkok, Sukhumvit 31) 泰式按摩放鬆；司機接續前往 BKK 機場接機 (星宇 16:30、華航 17:35)",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "泰航組按摩完自行前往湄南河畔景觀餐廳 Chom Arun（已確認訂位 19:45 3F Rooftop 三樓露天頂樓），預計 19:30-19:45 先行報到入座等候全員會合；19:50 於頂樓飽覽鄭王廟無人機秀震撼升空，隨後享用道地泰式晚餐與特調調酒；BKK組搭專車抵達餐廳會合（若遇尖峰塞車啟動轉乘備案改搭MRT直達Sanam Chai站）；司機前往 DMK 機場接聖雯組 (19:35抵達) 回 Asoke 入住；全員餐後公寓團聚",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "city": "曼谷 ➔ 羅勇 (Rayong)",
+      "theme": "曼谷出發直奔羅勇 ＆ Krua Kaeng Phet合菜午餐 ＆ Central Rayong 逛街置裝 ＆ The Gathering 開幕派對",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "08:30-09:15 民宿周邊早餐/外帶與行李整理；09:15-09:30 Asoke 公寓退房上車，VIP 專車準時發車啟程直奔羅勇（提早出發避開出城車潮，中途停靠國道7號休息站）",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "11:45-13:00 抵達羅勇名店 Krua Kaeng Phet (ครัวแกงเผ็ด) 享用澎湃泰中式合菜午餐；13:00-14:45 直奔 Central Rayong 吹冷氣悠閒試穿與採買合身服飾；15:00 準時抵達 Holiday Inn Express Rayong 辦理入住、卸行李、洗漱換穿剛買的新戰袍與補妝",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "The Gathering 開幕派對 @ Wisdom Valley (18:00 搭乘大會官方接駁專車出發前往會場，21:00 起官方接駁車循環返程)",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "city": "羅勇 / 芭達雅 (Wisdom Valley)",
+      "theme": "Tomorrowland Thailand 盛大首日 ＆ Amber早午餐 ＆ 老街漫步 ＆ Jay Jim魚餃麵",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "09:30 晨間自然醒、悠閒梳洗換上首日戰袍；10:30 VIP包車出發；10:45-11:45 抵達 Amber Rayong 採光玻璃屋享用精緻早午餐、手沖單品咖啡與拍照",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "11:50 包車接駁至永欽達老街 (Yomjinda Road) 北端入口；11:50-12:40 漫步老街百年木造排屋、欣賞壁畫與消食拍照；12:40 步行至老街南端 40 年老字號 Jay Jim（ก๋วยเตี๋ยวปลาเจ๊จิ๋ม）享用純魚肉麵、鮮美魚餃與酥炸魚皮；13:20 司機於魚餃麵店門口 (大馬路好上下車) 接大家直奔 36 號國道前往會場；約 14:15-14:30 提早抵達 Wisdom Valley 會場 Drop-off (司機下班)，避開排隊人潮搶先開箱主題舞台與買齊官方限定周邊",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "Tomorrowland Day 1 盛大開演！(12:00開放入場) 提早進場搶先開箱各大主題舞台、周邊巡禮打卡、百大DJ主舞台狂歡至深夜",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-12",
+      "city": "羅勇 / 芭達雅 (Wisdom Valley)",
+      "theme": "Tomorrowland Thailand 核心狂歡 (Day 2)",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "晨間自然醒，享用飯店豐盛早餐，補充電解質與水分；11:00 VIP包車出發前往 AJS 秘密廚房 (ร้านลับลับครัวอจส.)",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "11:30 抵達 AJS 秘密廚房 (ร้านลับลับครัวอจส.) 享用運河私房海鮮料理；13:30 安排泰式舒壓按摩；15:30-17:30 前往飛機夜市（Diamond Air Market）逛街覓食；17:30 專車直送 Wisdom Valley 會場 Drop-off 下車區 (司機下班)",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "Tomorrowland Day 2 巔峰震撼！指標廠牌主舞台、絕美燈光雷射秀與無與倫比聲光效果狂歡",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-13",
+      "city": "羅勇 / 芭達雅 (Wisdom Valley)",
+      "theme": "Tomorrowland Thailand 終極壓軸 (Day 3)",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "晨間悠閒補眠、享用飯店早午餐與電解質補給；11:00 VIP包車集合出發直奔 Saeng Chan Beach",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "11:30 抵達 Baramee Hoi (บารมีหอย) 現場入座大桌享用痛風生猛海鮮、招牌黑醬炒透抽；飯後過馬路漫步月牙灣海堤消波塊拍照賞景；13:30 安排泰式精油舒壓按摩；15:30-17:30 前往飛機夜市（Diamond Air Market）逛街採買與拍照；17:30 專車直送會場 Drop-off 下車區 (司機下班)",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "Tomorrowland 閉幕終章！國際傳奇DJ壓軸登台、終場震撼萬人齊嗨、極致無人機與煙火秀狂歡至深夜 (23:59)",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-14",
+      "city": "羅勇 ➔ 曼谷 (Bangkok)",
+      "theme": "告別羅勇返回曼谷 ＆ 暹羅一路逛到CentralWorld ＆ Copper頂級Buffet(第二輪) ＆ Big C夜衝採買",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "08:00 晨間早餐與打包大件行李；09:00 準時退房，VIP包車專車出發直奔曼谷 (車程約2.5小時，全員車上補眠補血，避開午後大塞車)",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "11:30-12:00 抵達曼谷民宿 (Siam Fundee Suites / Every Surawong) 卸放大件行李；12:00-18:00 曼谷商圈單向大縱走 (12:00-14:00 Siam Paragon 美食街午餐與暹羅百麗宮、Siam Discovery Loft選品；14:00-16:00 Siam Square 潮流服飾與 Gentle Woman；16:00-18:00 順著 R-Walk 空橋直接走進 centralwOrld 逛各國旗艦店與文創專櫃)；18:00 centralwOrld 約定點會合，戰利品集中上包車，啟動雙軌分工（組別A回民宿換裝 / 組別B留市區慢活）",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "【雙軌彈性分工 18:00-19:15】\n🔹組別 A（回民宿放戰利品＋休息換裝組）：18:00 於 centralwOrld 約定點將下午採買戰利品集中上包車，返回 Siam Fundee Suites 與 Every Surawong 卸放戰利品並梳洗換裝；18:45 原車出發，19:00-19:10 送達 Gaysorn Amarin 樓下放人（包車合約圓滿結束，司機下班結算）。\n🔹組別 B（留市區繼續逛街＋歇腳組）：18:00 將戰利品交由組別 A 帶回後，輕裝留守 centralwOrld 繼續逛街或於咖啡廳休息，免去來回塞車奔波；19:15 走空橋步行至 Gaysorn Amarin 3 樓與組別 A 會合報到。\n【全員晚宴與夜衝採買 19:15 起】\n19:15 兩組於 3 樓 Copper Beyond Buffet 門口會合報到核銷；19:30-21:30 Copper Beyond Buffet Gaysorn Amarin（第二輪晚餐，黑松露可頌濃湯/炙燒和牛船麵/生蠔/甜點吃滿120分鐘）；21:30 步出餐廳走天橋直達斜對面 Big C Supercenter Rajdamri（營業至凌晨02:00）伴手禮、泰奶、零食大採購並辦理退稅；23:00 後滿載於門口叫車回民宿休息",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "city": "曼谷 (Bangkok)",
+      "theme": "4 位夥伴返台日 ＆ 雙人開啟慢活模式",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "09:30 4位返台夥伴整理行囊、市區最後採買，並依航班分批前往機場（泰航/星宇/獅航）；留泰 2 人退房後轉移至 Saladaeng Residence 辦理入住與行李寄放",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "4位夥伴順利登機返台；達睿 & 承宏 展開曼谷慢活模式，漫步享受 Silom / Sathorn 周邊特色精品咖啡與慢調街區，品嚐在地米其林小吃",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "達睿 & 承宏：造訪 Iconsiam 暹羅天地吹冷氣漫遊室內水上市集、漫步湄南河畔欣賞黃昏晚霞與水岸夜景",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-16",
+      "city": "曼谷 (Bangkok)",
+      "theme": "曼谷慢調藝文探索 ＆ 街拍巡禮",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "晨間自然醒，悠閒造訪石龍軍路文青老宅咖啡廳、漫步欣賞街頭塗鴉壁畫與老街建築",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "午後造訪曼谷當代藝術館 (MOCA BANGKOK) 欣賞藝術展覽，或暹羅商圈設計選品店、Big C 超市採購伴手禮泰奶與零食",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "傍晚預約曼谷知名泰式精油 SPA 水療芳療放鬆身心；晚間前往知名高空酒吧 (Rooftop Bar) 俯瞰曼谷百萬天際線夜景",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    },
+    {
+      "date": "2026-12-17",
+      "city": "曼谷 ➔ 高雄 (BKK-KHH)",
+      "theme": "曼谷最終巡禮 ＆ 伴手禮補貨 ＆ 圓滿歸國",
+      "events": [
+        {
+          "time": "上午",
+          "title": "上午安排",
+          "note": "晨間悠閒整理行李，享受飯店免費延遲退房至 17:00；前往 Central World 或 Siam Paragon 美食街早午餐與伴手禮最終採買",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "下午",
+          "title": "下午安排",
+          "note": "14:00 返回飯店整理裝箱；14:30 預約專車出發前往蘇凡納布國際機場 (BKK)，提早避開尖峰塞車車潮",
+          "status": "planned",
+          "type": "activity"
+        },
+        {
+          "time": "晚上",
+          "title": "晚間安排",
+          "note": "18:35 搭乘中華航空 CI0840 班機起飛；22:55 平安返抵高雄小港國際機場 (KHH)，旅程圓滿成功！",
+          "status": "planned",
+          "type": "activity"
+        }
+      ]
+    }
   ]
 }
