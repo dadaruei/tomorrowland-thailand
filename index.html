@@ -291,7 +291,7 @@
 
     <!-- VIEW 2: HOTELS & VIP VAN LOGISTICS -->
     <section id="view-logistics" class="hidden space-y-6">
-      <p class="text-xs text-amber-200/80">以下交通與住宿攻略為人工維護的參考卡片；最新活動時間請以「每日行程」為準。</p>
+      <p class="text-xs text-amber-200/80">資料尚未同步擴充欄位時，顯示既有參考卡片；最新活動時間請以「每日行程」為準。</p>
        <!-- VIP 8-Seater Van Rules Banner -->
       <div class="glass-card rounded-3xl p-6 sm:p-8 border-amber-400/30">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-white/10">
@@ -308,7 +308,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 text-sm">
+        <div id="van-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 text-sm">
           <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 space-y-1.5">
             <div class="text-amber-300 font-semibold">Day 1 (12/09 週三) · 曼谷全日調度</div>
             <p class="text-slate-300 text-xs leading-relaxed">10:35 BKK接泰航組 ➔ 水門換匯午餐 ➔ 14:00 Asoke放行李 ➔ 送Oasis Spa ➔ BKK接星宇(16:30)/華航(17:35)送Chom Arun ➔ DMK接晚班機(19:35)回Asoke。</p>
@@ -358,7 +358,7 @@
 
     <!-- VIEW 3: DINING & CREW SURVIVAL TIPS -->
     <section id="view-dining" class="hidden space-y-6">
-      <p class="text-xs text-amber-200/80">美食攻略為人工維護的參考卡片，最新預約狀態與時間以「每日行程」為準。</p>
+      <p class="text-xs text-amber-200/80">資料尚未同步擴充欄位時，顯示既有參考卡片；最新時間以「每日行程」為準。</p>
       <div class="glass-card rounded-3xl p-6 sm:p-8">
         <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">CURATED GASTRONOMY & ROUTES</span>
         <h2 class="text-xl sm:text-2xl font-bold text-white mt-1 flex items-center gap-2">
@@ -556,6 +556,8 @@
     // 1. COMPLETE 9-DAY ITINERARY DATA
     // ==========================================
     let itineraryData = [];
+    let enrichedFeed = false;
+    const ITINERARY_CACHE_KEY = "tml2026_public_feed_v2";
 
     // ==========================================
     // 2. HOTELS & DINING DATA
@@ -743,25 +745,90 @@
           </div>
         </article>`).join('');
     }
+    function hasTag(event, tag) {
+      return String(event.sub_tags || '').split(',').map(x => x.trim().toLowerCase()).includes(tag);
+    }
+    function enrichedEvents(tag, category) {
+      return itineraryData.flatMap(day => day.events.filter(e => e.type === category && hasTag(e, tag))
+        .map(e => ({...e, dayNum:day.day, date:day.shortDate}))).sort((a,b) => a.dayNum-b.dayNum || Number(a.sort_order||0)-Number(b.sort_order||0));
+    }
+    function mapLink(event) {
+      const url = safeMapUrl(event.map_url);
+      if (url) return url;
+      const query = event.local_address || event.local_name || event.location;
+      return query ? 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(query) : '';
+    }
+    function renderEnrichedCards() {
+      if (!enrichedFeed) return; // Old data.json: keep existing working cards.
+      const vans = enrichedEvents('van','transport');
+      const foods = enrichedEvents('featured_food','food');
+      const stays = enrichedEvents('checkin','accommodation');
+      if (vans.length) {
+        const groups = new Map();
+        vans.forEach(e => { if(!groups.has(e.dayNum)) groups.set(e.dayNum,[]); groups.get(e.dayNum).push(e); });
+        document.getElementById('van-grid').innerHTML = [...groups].map(([day, events]) => `<div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2">
+          <div class="text-amber-300 font-semibold">Day ${day} · ${escapeHtml(events[0].date)}</div>
+          ${events.map(e => `<p class="text-slate-300 text-xs leading-relaxed">${escapeHtml(e.card_summary || [e.time,e.title].filter(Boolean).join(' '))}</p>`).join('')}
+        </div>`).join('');
+      }
+      if (foods.length) {
+        document.getElementById('dining-grid').innerHTML = foods.map(e => {
+          const map = mapLink(e);
+          const phone = String(e.contact_phone||'').split('/')[0].trim();
+          const dial = /^[+0-9 ()-]{6,24}$/.test(phone) ? phone.replace(/[^+0-9]/g,'') : '';
+          return `<div class="p-5 rounded-2xl bg-white/[0.03] border border-white/10 space-y-3">
+            <span class="text-xs text-amber-300">Day ${e.dayNum} · ${escapeHtml(e.date)} · ${escapeHtml(e.time)}</span>
+            <h4 class="font-bold text-white">${escapeHtml(e.local_name||e.title)}</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">${escapeHtml(e.card_summary||e.note||'')}</p>
+            ${e.booking_ref?`<p class="text-xs text-amber-200">${escapeHtml(e.booking_ref)}</p>`:''}
+            <div class="flex flex-wrap gap-2">${map?`<a href="${escapeHtml(map)}" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-300 border border-amber-400/30 rounded-lg px-3 py-2">📍 地圖</a>`:''}${dial?`<a href="tel:${escapeHtml(dial)}" class="text-xs text-amber-300 border border-amber-400/30 rounded-lg px-3 py-2">📞 撥號</a>`:''}</div>
+          </div>`;
+        }).join('');
+      }
+      if (stays.length) {
+        document.getElementById('hotels-grid').innerHTML = stays.map(e => {
+          const map=mapLink(e);
+          return `<div class="glass-card rounded-2xl p-5 space-y-3">
+            <span class="text-xs text-amber-300">Day ${e.dayNum} · ${escapeHtml(e.date)}</span>
+            <h4 class="font-bold text-white">${escapeHtml(e.local_name||e.title)}</h4>
+            <p class="text-xs text-slate-300 whitespace-pre-line">${escapeHtml(e.card_summary||e.note||'')}</p>
+            ${e.local_address?`<p class="text-xs text-slate-400">${escapeHtml(e.local_address)}</p>`:''}
+            ${e.booking_ref?`<p class="text-xs text-amber-200">${escapeHtml(e.booking_ref)}</p>`:''}
+            ${map?`<a href="${escapeHtml(map)}" target="_blank" rel="noopener noreferrer" class="inline-flex text-xs text-amber-300 border border-amber-400/30 rounded-lg px-3 py-2">📍 地圖</a>`:''}
+          </div>`;
+        }).join('');
+      }
+    }
+    function applyItineraryPayload(payload, source) {
+      if(payload.error || !Array.isArray(payload.days) || payload.days.length!==9) throw new Error('行程資料格式異常');
+      itineraryData=payload.days.map((d,i)=>{
+        const date=String(d.date||'');
+        const day=Number(date.slice(-2))-8;
+        const weekday=['週日','週一','週二','週三','週四','週五','週六'][new Date(date+'T12:00:00Z').getUTCDay()];
+        return {day:Number.isFinite(day)?day:i+1,date,shortDate:date.slice(5).replace('-','/'),weekday,city:d.city||'泰國',events:Array.isArray(d.events)?d.events:[]};
+      }).filter(d=>d.date);
+      enrichedFeed=itineraryData.some(d=>d.events.some(e=>Object.prototype.hasOwnProperty.call(e,'sub_tags')));
+      renderDayPills();renderItinerary();renderLogisticsAndDining();renderEnrichedCards();
+      document.getElementById('sync-indicator').textContent=(source==='offline'?'📴 離線備份 · ':'資料更新：')+String(payload.updated||'未提供')+'（泰國時間）';
+    }
     async function loadItinerary() {
-      const container=document.getElementById('itinerary-list');
+      let cached = null;
+      try { cached = JSON.parse(localStorage.getItem(ITINERARY_CACHE_KEY)||'null'); if(cached) applyItineraryPayload(cached,'offline'); } catch (_) {}
       try {
-        const response=await fetch('./data.json?ts='+Date.now(),{cache:'no-store'});
+        const controller=new AbortController();
+        const timeout=setTimeout(()=>controller.abort(),8000);
+        let response;
+        try { response=await fetch('./data.json?ts='+Date.now(),{cache:'no-store',signal:controller.signal}); }
+        finally { clearTimeout(timeout); }
         if(!response.ok) throw new Error('HTTP '+response.status);
         const payload=await response.json();
-        if(payload.error) throw new Error(payload.error);
-        if(!Array.isArray(payload.days)) throw new Error('JSON 缺少 days');
-        itineraryData=payload.days.map((d,i)=>{
-          const date=String(d.date||'');
-          const day=Number(date.slice(-2))-8;
-          const weekday=['週日','週一','週二','週三','週四','週五','週六'][new Date(date+'T12:00:00Z').getUTCDay()];
-          return {day:Number.isFinite(day)?day:i+1,date,shortDate:date.slice(5).replace('-','/'),weekday,city:d.city||'泰國',events:Array.isArray(d.events)?d.events:[]};
-        }).filter(d=>d.date);
-        renderDayPills(); renderItinerary();
-        document.getElementById('sync-indicator').textContent='資料更新：'+String(payload.updated||'未提供')+'（泰國時間）';
+        applyItineraryPayload(payload,'online');
+        try { localStorage.setItem(ITINERARY_CACHE_KEY,JSON.stringify(payload)); } catch (_) {}
       } catch(err) {
-        container.innerHTML=`<div class="glass-card rounded-2xl p-6 border-rose-400/30 text-rose-200">無法載入最新行程資料：${escapeHtml(err.message)}。請確認 GitHub 的 data.json 已完成同步。<button onclick="loadItinerary()" class="block mt-3 px-3 py-2 border border-amber-400/40 rounded-xl text-amber-200">重新讀取</button></div>`;
-        document.getElementById('sync-indicator').textContent='資料同步失敗';
+        if(!cached) {
+          document.getElementById('itinerary-list').innerHTML=`<div class="glass-card rounded-2xl p-6 border-rose-400/30 text-rose-200">目前無法載入行程：${escapeHtml(err.message)}。首次使用需先連網開啟一次。<button onclick="loadItinerary()" class="block mt-3 px-3 py-2 border border-amber-400/40 rounded-xl text-amber-200">重新讀取</button></div>`;
+          document.getElementById('sync-indicator').textContent='資料載入失敗';
+        }
       }
     }
 
@@ -1007,11 +1074,11 @@
     // ==========================================
     window.addEventListener("DOMContentLoaded", () => {
       loadItinerary();
-      renderLogisticsAndDining();
       updateChecklistBadge(getChecklist());
       updateCountdown();
       setInterval(updateCountdown, 1000);
       setInterval(loadItinerary, 5 * 60 * 1000);
+      if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("./sw.js").catch(()=>{});
     });
   </script>
 </body>
