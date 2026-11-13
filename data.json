@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-13 13:06",
+  "updated": "2026-11-13 14:23",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -115,15 +115,15 @@
         },
         {
           "time": "18:00–19:30",
-          "title": "VIP包車 BKK 機場接機與接送餐廳",
+          "title": "BKK 機場行李交接 ＆ 轉搭機場快線前往餐廳",
           "location": "曼谷蘇凡納布國際機場 (BKK) ➔ Chom Arun",
-          "note": "VIP專車接載星宇與華航組直奔湄南河畔 Chom Arun 餐廳會合（行李置車上）。若遇下班尖峰塞車，啟動轉乘備案：專車送至機場快線 Hua Mak 站或 MRT Phetchaburi 站，輕裝轉乘 MRT 藍線直達 Sanam Chai 站（1號出口步行約 8-10 分鐘）。",
+          "note": "司機於 BKK 二樓 3 號出口等候，星宇與華航組（共4人）將大件托運行李放上包車後，輕裝下樓搭乘機場快線 (ARL) 至 Makkasan 站轉乘 MRT 藍線直達 Sanam Chai 站（1號出口步行 8-10 分鐘）前往 Chom Arun 餐廳；司機收齊行李後直接前往 DMK 機場接聖雯組。",
           "type": "transport",
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "van",
-          "card_summary": "BKK 機場接星宇與華航組直奔湄南河畔 Chom Arun 餐廳；塞車備案轉乘 MRT 藍線至 Sanam Chai 站",
-          "local_name": "VIP 豪華廂型車 (8人座)",
+          "card_summary": "BKK 二樓 3 號出口交放大件行李上包車，4人輕裝搭機場快線 ARL 轉 MRT 藍線直達餐廳",
+          "local_name": "VIP 豪華廂型車 / 機場快線 ARL",
           "local_address": "曼谷蘇凡納布國際機場 (BKK) ➔ Chom Arun",
           "contact_phone": "",
           "booking_ref": "已預約包車"
@@ -182,7 +182,7 @@
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "featured_food",
-          "card_summary": "已訂位 3F 露天頂樓看 19:50 無人機秀；招牌金沙中卷、Pad Thai；老城區塞車備案搭 MRT 藍線至 Sanam Chai 站 1 號出口",
+          "card_summary": "已訂位 3F 露天頂樓看 19:50 無人機秀；招牌金沙中卷、Pad Thai；BKK組搭機場快線轉 MRT 藍線至 Sanam Chai 站 1 號出口",
           "local_name": "ร้านอาหารชมอรุณ (Chom Arun Restaurant)",
           "local_address": "",
           "contact_phone": "095-446-4199",
