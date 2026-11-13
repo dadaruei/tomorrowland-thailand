@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OUR JOURNEY — Tomorrowland Thailand 2026 · 9D8N</title>
   <link rel="stylesheet" href="./tailwind.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg-obsidian: #090A10;
@@ -87,6 +87,11 @@
     .emblem-glow {
       animation: pulseGlow 5s ease-in-out infinite;
     }
+    /* Signature footer — editorial champagne-gold typography */
+    .footer-signature { font-family: 'Noto Serif TC', serif; font-weight: 500; letter-spacing: .14em; color: #EBD49F; text-shadow: 0 1px 16px rgba(212,175,55,.12); }
+    .footer-motto { font-family: 'Cinzel', Georgia, serif; font-style: italic; font-weight: 600; letter-spacing: .095em; color: #CDBB96; line-height: 1.9; }
+    .footer-rule { height: 1px; width: min(210px, 65%); background: linear-gradient(90deg, transparent, rgba(212,175,55,.6), transparent); }
+    @media (max-width: 420px) { .footer-signature { letter-spacing: .08em; } .footer-motto { letter-spacing: .045em; } }
   </style>
 </head>
 <body class="min-h-screen antialiased selection:bg-amber-500/30 selection:text-amber-200">
@@ -496,13 +501,15 @@
 
   </main>
 
-  <!-- FOOTER (Strict Privacy Compliance) -->
-  <footer class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-12 text-center border-t border-white/10 mt-8">
-    <p class="font-display text-sm sm:text-base tracking-widest text-amber-300 font-semibold">
+  <!-- FOOTER · Crew signature -->
+  <footer class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-9 pb-14 text-center border-t border-white/10 mt-8">
+    <p class="font-display text-sm sm:text-base tracking-widest text-amber-300 font-semibold uppercase">
       Made for our Tomorrowland crew ✦
     </p>
-    <p class="text-xs text-slate-500 mt-1.5">
-      不包含私人航班乘客資料、訂單編號及拆帳資料
+    <div class="footer-rule mx-auto mt-5 mb-4" aria-hidden="true"></div>
+    <p class="footer-signature text-lg sm:text-2xl leading-relaxed">睿睿出品・必屬精品</p>
+    <p class="footer-motto text-[10px] sm:text-xs mt-4 max-w-xl mx-auto">
+      LIVE TODAY, LOVE TOMORROW, UNITE FOREVER
     </p>
   </footer>
 
@@ -633,6 +640,15 @@
     let searchQuery = "";
     let currentView = "itinerary";
 
+    // Fixed trip-city labels: independent of the city field in data.json.
+    function tripCity(day) {
+      const n = Number(day);
+      if (n === 2) return '曼谷 → 羅勇';
+      if (n >= 3 && n <= 5) return '羅勇';
+      if (n === 6) return '羅勇 → 曼谷';
+      return '曼谷';
+    }
+
     function renderDayPills() {
       const container = document.getElementById("day-pills-bar");
       let html = `
@@ -657,7 +673,7 @@
               Day ${item.day} <span class="font-normal opacity-80">${item.shortDate} (${item.weekday})</span>
             </div>
             <span class="text-[10px] px-1.5 py-0.5 rounded bg-black/40 text-amber-200/90 border border-white/5">
-              ${item.city.split(" ")[0]}
+              ${tripCity(item.day)}
             </span>
           </button>
         `;
@@ -694,7 +710,7 @@
       container.innerHTML = days.map(d => `
         <article id="day-card-${d.day}" class="glass-card rounded-3xl p-5 sm:p-7">
           <div class="flex flex-wrap items-center gap-2 pb-4 border-b border-white/10">
-            <span class="rounded-full px-3 py-1 text-xs font-bold bg-amber-500/20 text-amber-200 border border-amber-400/30">DAY ${d.day} · ${escapeHtml(d.date)} (${escapeHtml(d.weekday)})</span>
+            <span class="rounded-full px-3 py-1 text-xs font-bold bg-amber-500/20 text-amber-200 border border-amber-400/30">DAY ${d.day} · ${escapeHtml(d.date)} (${escapeHtml(d.weekday)}) · ${tripCity(d.day)}</span>
             <span class="text-slate-300 text-xs">${d.events.length} 筆活動</span>
           </div>
           <div class="relative mt-5 ml-2 border-l border-amber-400/25 space-y-4">
