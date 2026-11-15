@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-15 22:47",
+  "updated": "2026-11-15 23:29",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -854,19 +854,34 @@
           "booking_ref": "已確認 (18:30燈光秀/19:00水舞秀)"
         },
         {
-          "time": "19:15–22:00",
-          "title": "First One Night Market Talat Phlu 晚餐小吃與逛街 ＆ 自行返回住宿",
-          "location": "First One Night Market Talat Phlu (เฟิร์สวัน ไนท์มาร์เก็ต)",
-          "note": "19:00 水舞秀結束後（約 19:15），六人直接出發前往 First One Night Market Talat Phlu（เฟิร์สวัน ไนท์มาร์เก็ต）。交通動線：自 ICONSIAM 步行至 Charoen Nakhon 金線站，搭乘金線至 Krung Thon Buri 站，轉乘 BTS Silom Line（往 Bang Wa 方向）至 Talat Phlu 站，再步行至夜市（請保留轉乘、候車與步行緩衝，勿將預估交通時間標記為已確認）。預估 20:00 左右抵達，約 20:00–22:00 享用夜市晚餐、品嚐泰國在地小吃、逛街及自由活動（晚餐地點已決定，不需餐廳訂位；夜市一般營業時間 16:00–00:00，個別攤位可能提前收攤；20:00 抵達與 22:00 離開均為規劃時間，非已確認班次）。22:00 後依團員體力自行搭乘大眾運輸返回各自住宿（4 人住 83 Siamfandee Suites、2 人 Every Surawong），六人不另安排包車。",
+          "time": "19:15–20:30",
+          "title": "符德興百年米粉泰式晚餐（Tek Heng Mee Krob Jeen Lee，優先正餐）",
+          "location": "Tek Heng Mee Krob Jeen Lee（符德興 / เต็กเฮง หมี่กรอบจีนหลี）",
+          "note": "19:00 水舞結束後（約 19:15），六人分乘 2 台 Grab / 計程車（車程約 15–25 分鐘，經 Lat Ya Rd 與 Thoet Thai Rd，避開 BTS 站步行 1.3 公里趕不及打烊之時間風險）直奔 Talat Phlu 運河橋旁百年老字號「符德興」享用正式晚餐（預計 19:35–19:45 入座）。必點招牌：Mee Krob 泰式百年宮廷酥脆米粉、酸辣冬蔭蝦湯、泰式中菜熱炒。表定營業至 21:00，待電話/FB確認週一晚間營業與六人留位；若遇客滿或提早打烊，正餐備案為營業至 23:00 之楚龍炒粿條。",
+          "type": "food",
+          "status": "verify",
+          "map_url": "https://www.google.com/maps/place//data=!4m2!3m1!19sChIJrTSW6FuY4jARc2IhhsnMNQQ",
+          "sub_tags": "featured_food",
+          "card_summary": "19:15 水舞後分乘 2 台 Grab 直奔 Talat Phlu，享用符德興百年宮廷酥脆米粉與泰式熱炒（待確認週一營業與訂位；備案楚龍炒粿條）",
+          "local_name": "เต็กเฮง หมี่กรอบจีนหลี (Tek Heng Mee Krob Jeen Lee)",
+          "local_address": "326-330, Talat Phlu, Thon Buri, Bangkok 10600",
+          "contact_phone": "+66 89 488 1538",
+          "booking_ref": "待訂位 (營業至 21:00 / 待確認週一營業與 6 人留位)"
+        },
+        {
+          "time": "20:30–22:30",
+          "title": "Talat Phlu 鐵道老街小吃巡禮 ＆ First One Night Market 逛夜市酒吧 ＆ 自行返回住宿",
+          "location": "Talat Phlu 鐵道老街小吃 ➔ First One Night Market Talat Phlu",
+          "note": "晚餐後展開老街由北往南順路漫步巡禮（總長約 500 公尺 / 純步行約 7 分鐘）：途經 Sunee 叉燒飯、Sarinthip 百年泰式煎餅、品嚐 Ni-Ang 招牌蛋黃冰淇淋（營業至 02:00）、可選 Auntie Kia 現煎韭菜粿（李寶玉週一公休之替代首選）；隨後步行約 3 分鐘抵達 First One Night Market Talat Phlu，享受啤酒花園 Live 音樂演奏、夜市特色小吃與逛街購物（夜市營業至 00:00，免訂位）。約 22:00–22:30 依團員體力各自叫車或搭乘大眾運輸返回各自住宿（4 人住 83 Siamfandee Suites、2 人 Every Surawong），不另安排包車。",
           "type": "food",
           "status": "confirmed",
-          "map_url": "",
+          "map_url": "https://www.google.com/maps/place//data=!4m2!3m1!19sChIJAU-m1CCZ4jAR5WBsOvdOQBM",
           "sub_tags": "food",
-          "card_summary": "水舞後搭金線轉 BTS 至 Talat Phlu 站，First One 夜市晚餐小吃與逛街（預估 20:00 抵達、22:00 前往住宿，時間為規劃非已確認；已決定免訂位），結束後自行返回住宿",
-          "local_name": "เฟิร์สวัน ไนท์มาร์เก็ต (First One Night Market Talat Phlu)",
-          "local_address": "Ratchadaphisek Rd, Dao Khanong, Thon Buri, Bangkok (近 BTS Talat Phlu 站)",
-          "contact_phone": "",
-          "booking_ref": "已決定 (夜市免訂位 / 營業時間 16:00–00:00)"
+          "card_summary": "沿鐵道老街由北往南散步 500 米吃 Ni-Ang 蛋黃冰等小吃，再到 First One 夜市喝啤酒逛街，結束後依住宿各自搭車返回",
+          "local_name": "ตลาดพลู ＆ เฟิร์สวัน ไนท์มาร์เก็ต (First One Night Market Talat Phlu)",
+          "local_address": "Thoet Thai Rd ＆ 20 Ratchadaphisek Rd, Talat Phlu, Thon Buri, Bangkok",
+          "contact_phone": "+66 99 154 4949",
+          "booking_ref": "免訂位 (鐵道街頭小吃 ＆ 夜市自由前往)"
         }
       ]
     },
