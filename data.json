@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-15 19:19",
+  "updated": "2026-11-15 20:25",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -839,7 +839,7 @@
           "booking_ref": "已預約 (14:00 6人)"
         },
         {
-          "time": "17:00–19:30",
+          "time": "17:00–19:15",
           "title": "自行搭船前往 ICONSIAM ＆ 欣賞聖誕光影水舞秀",
           "location": "ICONSIAM (暹羅天地)",
           "note": "17:00 鄭王廟行程結束後，六人自行搭船前往 ICONSIAM（實際碼頭、船班與是否需轉船待確認）；18:30 欣賞 ICONSIAM 聖誕樹燈光音樂秀（已確認），19:00 欣賞 The ICONIC Multimedia Water Features 水舞秀（已確認）。時段均已確認，留意當日臨時異動。",
@@ -854,19 +854,19 @@
           "booking_ref": "已確認 (18:30燈光秀/19:00水舞秀)"
         },
         {
-          "time": "19:15–21:30",
-          "title": "ICONSIAM 周邊道地泰式料理晚餐 ＆ 自行返回住宿",
-          "location": "ICONSIAM 周邊 / 曼谷市區道地泰式餐廳",
-          "note": "19:15 兩場表演結束後，於 ICONSIAM 周邊尋找道地泰式料理晚餐（餐廳待選、尚未訂位），餐後六人自行搭乘大眾運輸或 Grab 返回各自住宿（4人住 83 Siamfandee Suites、2人住 Every Surawong）。",
+          "time": "19:15–22:00",
+          "title": "First One Night Market Talat Phlu 晚餐小吃與逛街 ＆ 自行返回住宿",
+          "location": "First One Night Market Talat Phlu (เฟิร์สวัน ไนท์มาร์เก็ต)",
+          "note": "19:00 水舞秀結束後（約 19:15），六人直接出發前往 First One Night Market Talat Phlu（เฟิร์สวัน ไนท์มาร์เก็ต）。交通動線：自 ICONSIAM 步行至 Charoen Nakhon 金線站，搭乘金線至 Krung Thon Buri 站，轉乘 BTS Silom Line（往 Bang Wa 方向）至 Talat Phlu 站，再步行至夜市（請保留轉乘、候車與步行緩衝，勿將預估交通時間標記為已確認）。預估 20:00 左右抵達，約 20:00–22:00 享用夜市晚餐、品嚐泰國在地小吃、逛街及自由活動（晚餐地點已決定，不需餐廳訂位；夜市一般營業時間 16:00–00:00，個別攤位可能提前收攤；20:00 抵達與 22:00 離開均為規劃時間，非已確認班次）。22:00 後依團員體力自行搭乘大眾運輸返回各自住宿（4 人住 83 Siamfandee Suites、2 人 Every Surawong），六人不另安排包車。",
           "type": "food",
-          "status": "verify",
+          "status": "confirmed",
           "map_url": "",
           "sub_tags": "food",
-          "card_summary": "晚上自行安排晚餐（餐廳待選未訂位）及自行搭車返回各自住宿（4人住 83 Siamfandee Suites、2人住 Every Surawong）",
-          "local_name": "ICONSIAM 美食區 / 在地泰式餐廳",
-          "local_address": "ICONSIAM, Bangkok",
+          "card_summary": "水舞後搭金線轉 BTS 至 Talat Phlu 站，First One 夜市晚餐小吃與逛街（預估 20:00 抵達、22:00 前往住宿，時間為規劃非已確認；已決定免訂位），結束後自行返回住宿",
+          "local_name": "เฟิร์สวัน ไนท์มาร์เก็ต (First One Night Market Talat Phlu)",
+          "local_address": "Ratchadaphisek Rd, Dao Khanong, Thon Buri, Bangkok (近 BTS Talat Phlu 站)",
           "contact_phone": "",
-          "booking_ref": "尚未訂位 (餐廳待選)"
+          "booking_ref": "已決定 (夜市免訂位 / 營業時間 16:00–00:00)"
         }
       ]
     },
