@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-16 21:09",
+  "updated": "2026-11-16 23:11",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -1049,18 +1049,18 @@
         },
         {
           "time": "13:30–15:00",
-          "title": "宛貞與豪謙送機前往 BKK 機場（待確認）",
+          "title": "宛貞與豪謙送機前往 BKK 機場 (KKday 已預訂)",
           "location": "83 Siamfandee Suites ➔ 曼谷蘇凡納布國際機場 (BKK)",
-          "note": "宛貞與豪謙當日不參加老街行程，睡到自然醒後於民宿整理行李辦理退房；預計 13:30 專車送機前往 BKK 機場。特別注意：KKday 原訂單誤訂成 11/16 目前正處理改訂重訂確認中，送機狀態標示為【待確認】；達睿與承宏不需陪同送機。",
+          "note": "宛貞與豪謙當日不參加老街行程，睡到自然醒後於民宿整理行李辦理退房；13:30 KKday 預約專車（訂單 26KK223604671，GLABMA 經濟型 5 座，達睿已付款預訂）於 83 Siam Fandee cafe 接送前往 BKK 機場。達睿與承宏不需陪同送機。",
           "type": "transport",
-          "status": "verify",
+          "status": "confirmed",
           "map_url": "",
           "sub_tags": "transport",
-          "card_summary": "宛貞與豪謙 13:30 預計專車送機赴 BKK 機場搭星宇（KKday 待改訂確認，送機狀態待確認）",
+          "card_summary": "宛貞與豪謙 13:30 KKday 專車送機赴 BKK 機場搭星宇（訂單 26KK223604671 已預訂完成）",
           "local_name": "Suvarnabhumi Airport (BKK)",
           "local_address": "999, Nong Prue, Bang Phli District, Samut Prakan",
           "contact_phone": "",
-          "booking_ref": "待確認 (待重訂確認)"
+          "booking_ref": "26KK223604671"
         },
         {
           "time": "17:40–22:30",
