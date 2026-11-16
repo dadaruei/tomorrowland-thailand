@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-16 15:07",
+  "updated": "2026-11-16 17:16",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -212,6 +212,21 @@
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "",
+          "card_summary": "",
+          "local_name": "",
+          "local_address": "",
+          "contact_phone": "",
+          "booking_ref": ""
+        },
+        {
+          "time": "21:30–23:59",
+          "title": "SW1 Market 夜市宵夜（自由加選）",
+          "location": "SW1 Market, 222 Sukhumvit Rd, Khlong Toei, Bangkok 10110",
+          "note": "Chom Arun 晚餐後可自行前往 Asok 站旁 SW1 Market 續攤；聖雯與中偉從 DMK 由司機送抵 Asoke 民宿後，先放行李即可到此吃晚餐。預計營業至 00:00（待官方核實，各攤位可能提前收攤），不安排包車接送，依實際抵達時間自由決定。",
+          "type": "food",
+          "status": "verify",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=SW1+Market+Bangkok",
+          "sub_tags": "night_market",
           "card_summary": "",
           "local_name": "",
           "local_address": "",
