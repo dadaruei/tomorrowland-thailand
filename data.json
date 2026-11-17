@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-17 09:07",
+  "updated": "2026-11-17 09:27",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -241,15 +241,15 @@
       "theme": "Day 2",
       "events": [
         {
-          "time": "08:30–09:15",
-          "title": "公寓周邊早餐與退房準備",
-          "location": "Bangkok Family trip BTS Asoke 周邊",
-          "note": "享用民宿周邊在地早餐、行李打包整理。",
+          "time": "07:30–09:15",
+          "title": "SWU 週四早市早餐採買（自由參加）／民宿早餐與退房準備",
+          "location": "SWU Market（Srinakharinwirot University Prasarnmit）／Bangkok Family Trip BTS Asoke",
+          "note": "【可自由選擇是否參加，非全團固定行程】07:30–09:00 可由達睿、承宏前往 SWU 大學週四早市逛街買早餐，預計07:30民宿出發、07:50–08:00到市場、08:00–08:35採買、約09:00回民宿；也可選擇叫車，步行單程約15–20分鐘為估算。其他團員可自行同行，或留在民宿睡覺、整理行李，吃外帶早餐。推薦尋找芝麻球、Rice168 牛油炒飯、Ovaltine 脆皮煎餅、東北香腸、J&G 龍眼飲、迷你蛋塔；攤位與價格未保證當天供應。市場例行週二／週四，具體攤商及營業時間以現場為準。09:15–09:30全員仍須依原行程退房上車赴羅勇。",
           "type": "food",
-          "status": "confirmed",
-          "map_url": "",
+          "status": "verify",
+          "map_url": "https://www.google.com/maps/search/?api=1&query=SWU+Market+Srinakharinwirot+University+Prasarnmit+Bangkok",
           "sub_tags": "",
-          "card_summary": "",
+          "card_summary": "07:30–09:00 SWU 週四早市（自願參加，可外帶早餐回民宿）；09:15–09:30 退房上車不變",
           "local_name": "",
           "local_address": "",
           "contact_phone": "",
