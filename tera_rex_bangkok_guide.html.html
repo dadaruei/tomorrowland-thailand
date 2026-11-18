@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>12/9 曼谷自由活動攻略｜接機・EMSPHERE・Terminal 21</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-base: #090A10;
+      --bg-card: rgba(20, 23, 36, 0.82);
+      --bg-card-hover: rgba(26, 30, 48, 0.92);
+      --gold-primary: #D4AF37;
+      --gold-light: #FDE68A;
+      --amber-accent: #F59E0B;
+      --text-main: #F3F4F6;
+      --text-sub: #9CA3AF;
+      --border-gold: rgba(212, 175, 55, 0.25);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-image:
+        radial-gradient(circle at 15% 5%, rgba(212, 175, 55, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    header {
+      position: relative;
+      padding: 28px 20px 20px;
+      max-width: 780px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Cinzel', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 4px 0 6px;
+      letter-spacing: 0.02em;
+      background: linear-gradient(135deg, #FFFBEB 0%, #D4AF37 55%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 13.5px;
+      color: var(--text-sub);
+      line-height: 1.5;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 16px 72px;
+      overflow-wrap: anywhere;
+    }
+
+    /* Sticky Tab Navigation (Single-row Horizontal Scroll Pills on Mobile) */
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(9, 10, 16, 0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 10px 16px;
+      margin: 0 -16px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      scroll-margin-top: 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .nav::-webkit-scrollbar { display: none; }
+
+    .tab-button {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 13.5px;
+      height: 38px;
+      padding: 0 14px;
+      cursor: pointer;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.05);
+      color: #D1D5DB;
+      border-radius: 999px;
+      transition: all 0.2s ease;
+    }
+
+    .tab-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(212, 175, 55, 0.38);
+    }
+
+    .tab-button.active {
+      background: linear-gradient(135deg, #F59E0B, #D4AF37);
+      color: #090A10;
+      font-weight: 700;
+      border-color: transparent;
+      box-shadow: 0 3px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    .tab-button:focus-visible,
+    .quick-button:focus-visible {
+      outline: 2px solid var(--gold-light);
+      outline-offset: 2px;
+    }
+
+    /* Top Global Info Banner */
+    .top-banner {
+      background: linear-gradient(145deg, rgba(212, 175, 55, 0.1), rgba(20, 23, 36, 0.7));
+      border: 1px solid var(--border-gold);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #E5E7EB;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .top-banner strong { color: var(--gold-light); }
+
+    /* Crew Badges */
+    .crew-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .crew-badge {
+      font-size: 12px;
+      padding: 5px 11px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: #D1D5DB;
+    }
+
+    .crew-badge.highlight {
+      background: rgba(212, 175, 55, 0.14);
+      border-color: rgba(212, 175, 55, 0.35);
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    /* In-tab Quick Jump Links */
+    .quicklinks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 16px;
+    }
+
+    .quick-button {
+      appearance: none;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: rgba(212, 175, 55, 0.08);
+      color: var(--gold-light);
+      border-radius: 999px;
+      padding: 7px 13px;
+      font: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .quick-button:hover {
+      background: rgba(212, 175, 55, 0.18);
+      border-color: rgba(212, 175, 55, 0.45);
+    }
+
+    /* Panels & Headings */
+    .tab-panel { display: none; animation: fadeIn 0.25s ease; }
+    .tab-panel.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+    .tab-panel section[id],
+    .tab-panel h2[id] {
+      scroll-margin-top: 72px;
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #FFF;
+      margin: 24px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      scroll-margin-top: 72px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin: 22px 0 10px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 16px;
+      margin: 10px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(212, 175, 55, 0.3);
+    }
+
+    .card.accent-gold {
+      border-color: rgba(212, 175, 55, 0.35);
+      background: linear-gradient(145deg, rgba(28, 31, 48, 0.88), rgba(16, 18, 28, 0.94));
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.14);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      color: var(--gold-light);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11.5px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .itemtitle {
+      font-weight: 700;
+      font-size: 16.5px;
+      color: #FFFFFF;
+      margin: 2px 0 6px;
+    }
+
+    p { line-height: 1.65; margin: 6px 0; }
+    .small { font-size: 13.5px; color: #D1D5DB; line-height: 1.65; }
+    .muted { color: var(--text-sub); font-size: 12.5px; line-height: 1.6; }
+
+    /* Callout Box */
+    .callout {
+      border-left: 3px solid var(--amber-accent);
+      background: rgba(245, 158, 11, 0.08);
+      border-top: 1px solid rgba(245, 158, 11, 0.15);
+      border-right: 1px solid rgba(245, 158, 11, 0.15);
+      border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+      padding: 13px 15px;
+      border-radius: 12px;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #F3F4F6;
+      margin: 12px 0;
+    }
+
+    .callout strong { color: #FCD34D; }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 18px;
+      margin: 6px 0;
+      border-left: 1.5px solid rgba(212, 175, 55, 0.35);
+    }
+
+    .tl-item {
+      position: relative;
+      padding-bottom: 12px;
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #E5E7EB;
+    }
+
+    .tl-item:last-child { padding-bottom: 0; }
+
+    .tl-item::before {
+      content: "";
+      position: absolute;
+      left: -23px;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber-accent);
+      box-shadow: 0 0 8px var(--amber-accent);
+    }
+
+    .time {
+      font-weight: 700;
+      color: var(--gold-light);
+      display: inline-block;
+      min-width: 96px;
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 13px;
+      background: rgba(212, 175, 55, 0.18);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      color: var(--gold-light);
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 12.5px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: rgba(212, 175, 55, 0.3);
+      color: #FFF;
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.12);
+      color: #9CA3AF;
+      font-weight: 500;
+    }
+
+    .btn.secondary:hover {
+      background: rgba(255, 255, 255, 0.09);
+      color: #E5E7EB;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .grid .card { margin: 0; display: flex; flex-direction: column; justify-content: space-between; }
+
+    /* Status Traffic Lights */
+    .status-list p {
+      margin: 8px 0;
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Footer */
+    footer {
+      color: #6B7280;
+      font-size: 12px;
+      line-height: 1.65;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    @media (max-width: 560px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 22px 16px 16px; }
+      h1 { font-size: 22px; }
+      .subtitle { display: none; }
+      .time { display: block; margin-bottom: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">✦ BANGKOK · 09 DEC 2026 · FIRST DAY</div>
+    <h1>🇹🇭 曼谷第一天自由活動攻略</h1>
+  </header>
+
+  <main>
+    <div class="nav-wrap">
+      <nav aria-label="攻略主要分頁" class="nav" role="tablist">
+        <button aria-controls="tab-airport" class="tab-button" data-tab="airport" id="button-airport" role="tab" type="button">✈️ 接機</button>
+        <button aria-controls="tab-schedule" class="tab-button" data-tab="schedule" id="button-schedule" role="tab" type="button">🕒 建議時間表</button>
+        <button aria-controls="tab-emsphere" class="tab-button" data-tab="emsphere" id="button-emsphere" role="tab" type="button">🛍️ EMSPHERE</button>
+        <button aria-controls="tab-terminal" class="tab-button" data-tab="terminal" id="button-terminal" role="tab" type="button">🏬 Terminal 21</button>
+        <button aria-controls="tab-massage" class="tab-button" data-tab="massage" id="button-massage" role="tab" type="button">💆 按摩</button>
+        <button aria-controls="tab-transport" class="tab-button" data-tab="transport" id="button-transport" role="tab" type="button">🚆 回民宿／晚餐交通</button>
+      </nav>
+    </div>
+
+    <div class="top-banner">
+      <span>🧭</span>
+      <div>
+        這是 <strong>12/9 出發前自由活動攻略</strong>（非全團固定行程）。店家與營業資訊以當日現場公告為準；<strong>18:00 於 Asok 民宿集合</strong>。
+      </div>
+    </div>
+
+    <!-- TAB 1: AIRPORT -->
+    <div aria-labelledby="button-airport" class="tab-panel" id="tab-airport" role="tabpanel">
+      <section id="airport">
+        <div class="crew-bar">
+          <span class="crew-badge highlight">👥 全體抵達 BKK 適用</span>
+          <span class="crew-badge">Tera &amp; Rex（10:35 抵）</span>
+          <span class="crew-badge">豪億與朋友（13:05 抵）</span>
+        </div>
+
+        <h2>✈️ BKK 機場｜出關、換匯、集合</h2>
+
+        <div class="callout">
+          <strong>全團約定集合：航廈 2F 入境大廳，3 號出口（Gate / Door 3）附近。</strong><br />
+          這是團隊約定的見面位置，不代表司機一定能停在門口。出關後先在 LINE 報平安；司機到達、實際上車位置以司機通知為準。<strong>不要自行走到 1F 計程車排隊區。</strong>
+        </div>
+
+        <div class="card accent-gold">
+          <span class="tag">出關後第一步</span>
+          <div class="itemtitle">2F Arrival Hall → Gate 3</div>
+          <p class="small">依序通過移民官查驗、領取行李、海關，進入 2F 公共入境大廳；跟著數字 <strong>3</strong> 找到 3 號門附近的會面點。抵達後先傳訊息給團主／司機，確認目前等待時間。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Suvarnabhumi+Airport+Arrival+Hall+Gate+3" rel="noopener" target="_blank">📍 3 號門地圖</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">司機還沒到？可以先換錢</span>
+          <div class="itemtitle">B 樓｜SuperRich Orange（橘色）</div>
+          <p class="small">從 2F 搭電梯或手扶梯到 <strong>B 樓（Airport Rail Link 機場快線樓層）</strong>，找 <strong>Zone C、靠近機場快線售票櫃檯</strong>的橘色 SuperRich。官方 2026/11/3 新開分店公告：每日 <strong>05:00–00:00</strong>。也可在附近比較其他合法換匯櫃檯當日牌價。請帶護照正本與現金，注意鈔票狀況。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=SuperRich+Orange+Suvarnabhumi+Airport+Rail+Link+B+Floor+Zone+C" rel="noopener" target="_blank">📍 B 樓換匯導航</a>
+            <a class="btn secondary" href="https://www.superrich1965.com/en/news/airport-rail-link-now-open" rel="noopener" target="_blank">官方分店公告 ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">等車時簡單逛</span>
+          <div class="itemtitle">機場內的休息與補給</div>
+          <p class="small">2F 入境大廳先找洗手間、便利商店、飲料與電信櫃檯；想吃東西可到 3F 公共餐飲區，或依機場指標找其他開放的餐飲設施。店家與營業狀況以當日為準，這裡不預設特定品牌一定有營業。</p>
+          <p class="small"><strong>重要：</strong>先確認司機還有多久才到。若只剩 10–15 分鐘，建議直接在 2F Gate 3 附近等待；若要下 B 樓換匯，預留返回 2F 的時間，並隨時看 LINE。行李不要無人看管。</p>
+        </div>
+
+        <div class="card small status-list">
+          <div class="itemtitle" style="font-size:15px;margin-bottom:8px;">🚦 等待情境快速判斷</div>
+          <p>🟢 <strong>司機還要 30 分鐘以上：</strong>可去 B 樓換匯，回 2F Gate 3 等。</p>
+          <p>🟡 <strong>還要 15–30 分鐘：</strong>附近買飲料、上洗手間，不要走遠。</p>
+          <p>🔴 <strong>司機快到了：</strong>留在 2F Gate 3，手機保持可聯絡。</p>
+          <p class="muted" style="background:none;border:none;padding:4px 0 0;">以上為建議緩衝，不是保證行走時間；人潮與排隊會影響返回速度。</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB 2: SCHEDULE -->
+    <div aria-labelledby="button-schedule" class="tab-panel" id="tab-schedule" role="tabpanel">
+      <section id="route">
+        <div class="crew-bar">
+          <span class="crew-badge highlight">🎯 Tera、Rex 主力路線</span>
+          <span class="crew-badge">BTS Phrom Phong 站</span>
+        </div>
+
+        <h2>⏱ Tera、Rex 建議時間表</h2>
+        <div class="card accent-gold">
+          <div class="timeline">
+            <div class="tl-item"><span class="time">11:30</span> BKK 機場上車，行李交司機保管</div>
+            <div class="tl-item"><span class="time">12:15–12:45</span> 預估抵達 EMSPHERE，司機直接回機場</div>
+            <div class="tl-item"><span class="time">12:45–13:15</span> 換匯（先確認櫃檯位置）</div>
+            <div class="tl-item"><span class="time">13:15–14:15</span> G／GM 樓午餐與泰奶</div>
+            <div class="tl-item"><span class="time">14:15–15:30</span> M、1 樓逛街</div>
+            <div class="tl-item"><span class="time">15:30–16:20</span> 自由選：甜點、EmQuartier 或提早回 Asok；若要按摩，請在 Asok 附近安排並預留回民宿時間</div>
+            <div class="tl-item"><span class="time">16:30 左右</span> BTS Phrom Phong → Asok（一站）</div>
+            <div class="tl-item"><span class="time">17:00–18:00</span> 回民宿與大家會合；18:00 再出發</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB 3: EMSPHERE -->
+    <div aria-labelledby="button-emsphere" class="tab-panel" id="tab-emsphere" role="tabpanel">
+      <div class="crew-bar">
+        <span class="crew-badge highlight">🎯 Tera、Rex 午餐與逛街主場</span>
+        <span class="crew-badge">BTS Phrom Phong 站</span>
+      </div>
+
+      <div aria-label="EMSPHERE 章節快速跳轉" class="quicklinks">
+        <button class="quick-button" data-target="em-intro" type="button">🏬 商場介紹</button>
+        <button class="quick-button" data-target="food" type="button">🍜 美食</button>
+        <button class="quick-button" data-target="shop" type="button">🛍️ 購物</button>
+        <button class="quick-button" data-target="em-exchange" type="button">💱 換匯</button>
+      </div>
+
+      <h2 id="em-intro">🛍️ EMSPHERE｜第一站商場介紹</h2>
+      <div class="card">
+        <p class="small">EMSPHERE 位於 Sukhumvit 的 EM District 商圈，靠近 <strong>BTS Phrom Phong</strong>。Tera、Rex 由司機送達後可先在館內吃午餐、換匯，再逛泰國設計服飾與生活選物。和 Terminal 21 是<strong>不同商場、不同地點</strong>。</p>
+        <p class="small">建議先逛 G／GM 樓餐飲，再逛 M、1F；2F 可找換匯櫃檯，3F 有 IKEA。店鋪與樓層以現場公告為準。</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=EMSPHERE+Bangkok" rel="noopener" target="_blank">📍 EMSPHERE 導航</a>
+          <a class="btn secondary" href="https://emsphere.co.th/directory/" rel="noopener" target="_blank">官方商場名錄 ↗</a>
+        </div>
+      </div>
+
+      <section id="food">
+        <h2>🍜 G／GM 樓吃什麼</h2>
+        <div class="grid" id="foods"></div>
+      </section>
+
+      <section id="shop">
+        <h2>🛍️ 值得逛的店</h2>
+        <div class="grid" id="shops"></div>
+        <div class="card small" style="margin-top:10px;">
+          <strong style="color:var(--gold-light);">樓層速查：</strong>
+          G／GM：餐廳、甜點、飲料｜M：選物、香氛、品牌服飾｜1F：泰國潮流服飾、美妝、運動品牌｜2F：電子產品、生活用品、SuperRich｜3F：IKEA。
+        </div>
+      </section>
+
+      <h2 id="em-exchange">💱 EMSPHERE 換匯</h2>
+      <div class="card accent-gold">
+        <span class="tag">先做這件事</span>
+        <div class="itemtitle">SuperRich｜EMSPHERE 2F</div>
+        <p class="small">EMSPHERE 官方名錄列於 2F；另有商場內其他 MONEY EXCHANGE 標示。先問服務台「SuperRich 在哪裡」，避免直接找錯樓層。帶護照正本與乾淨完整的鈔票，匯率看現場牌價。</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=SuperRich+EMSPHERE+Bangkok" target="_blank">📍 開啟地圖</a>
+          <a class="btn secondary" href="https://emsphere.co.th/directory/" target="_blank">商場官方名錄 ↗</a>
+        </div>
+      </div>
+
+      <section id="extra">
+        <h2>🥭 如果還有時間</h2>
+        <div class="card">
+          <div class="itemtitle">Mae Varee 芒果糯米飯｜Thong Lo</div>
+          <p class="small">在 BTS Thong Lo 附近，從 Phrom Phong 往東一站。屬於額外繞路選項；若要按摩就不建議兩個都排。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Mae+Varee+Mango+Sticky+Rice+Thong+Lo" target="_blank">📍 地圖導航</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB 4: TERMINAL 21 -->
+    <div aria-labelledby="button-terminal" class="tab-panel" id="tab-terminal" role="tabpanel">
+      <div class="crew-bar">
+        <span class="crew-badge highlight">🎯 豪億與朋友主力路線</span>
+        <span class="crew-badge">Tera &amp; Rex 順遊備案</span>
+        <span class="crew-badge">BTS Asok 站</span>
+      </div>
+
+      <div aria-label="Terminal 21 章節快速跳轉" class="quicklinks">
+        <button class="quick-button" data-target="t-intro" type="button">🏬 商場介紹</button>
+        <button class="quick-button" data-target="t-food" type="button">🍜 美食</button>
+        <button class="quick-button" data-target="t-shop" type="button">🛍️ 購物</button>
+        <button class="quick-button" data-target="t-exchange" type="button">💱 換匯</button>
+      </div>
+
+      <section id="terminal">
+        <h2 id="t-intro">🏬 Terminal 21 Asok｜民宿旁的備用行程</h2>
+        <div class="callout">
+          這裡是 <strong>Asok 的 Terminal 21</strong>，不是 Pattaya 的 Terminal 21！適合豪億與朋友抵達民宿後直接逛，也適合 Tera、Rex 提早逛完 EMSPHERE 後順路去。商場一般營業 10:00–22:00，當日仍以現場公告為準。
+        </div>
+
+        <h2 id="t-food">🍜 Terminal 21｜美食與飲料</h2>
+        <div class="card accent-gold">
+          <span class="tag">第一站：不用想太多</span>
+          <div class="itemtitle">5F｜Pier 21 平價美食街</div>
+          <p class="small">泰式炒河粉、打拋飯、海南雞飯、船麵、甜品等攤位集中。先在櫃檯購買儲值卡，再到攤位點餐；用完把卡拿回櫃檯退還餘額。價格比周邊百貨餐廳親民，實際價格看現場菜單。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pier+21+Food+Court+Terminal+21+Asok" rel="noopener" target="_blank">📍 Pier 21 地圖</a>
+            <a class="btn secondary" href="https://www.terminal21.co.th/asok/shop/pier21/en" rel="noopener" target="_blank">官方美食街資訊 ↗</a>
+          </div>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div>
+              <span class="tag">4F｜San Francisco</span>
+              <div class="itemtitle">坐下來吃餐廳</div>
+              <p class="small">如果不想去美食街，這層有泰國料理、日式餐廳等；可找 Have a Zeed、Thai Thai Boat Noodles。</p>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">甜點與泰奶</span>
+              <div class="itemtitle">After You／ChaTraMue</div>
+              <p class="small">想吃泰式甜點可找 After You；想喝泰奶可找手標泰奶。請依現場指標或商場店鋪搜尋確認櫃位。</p>
+            </div>
+            <div class="btn-row">
+              <a class="btn secondary" href="https://www.terminal21.co.th/asok/" rel="noopener" target="_blank">Terminal 21 官網 ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <h2 id="t-shop">🛍️ Terminal 21｜購物與樓層</h2>
+        <div class="grid">
+          <article class="card">
+            <div>
+              <span class="tag">LG｜Caribbean</span>
+              <div class="itemtitle">Gourmet Market</div>
+              <p class="small">超市、零食、飲料、日用品。豪億他們到民宿後想補貨最方便。</p>
+            </div>
+            <div class="btn-row">
+              <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Gourmet+Market+Terminal+21+Asok" rel="noopener" target="_blank">📍 地圖</a>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">GF／MF｜Rome／Paris</span>
+              <div class="itemtitle">國際品牌、入口與換匯</div>
+              <p class="small">BTS Asok 可由連通道進入。MF 可逛服飾與 Pop Mart；館內亦有 SuperRich 換匯據點，位置與營業時間先向服務台確認。</p>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">1F｜Tokyo</span>
+              <div class="itemtitle">泰國服飾與小店</div>
+              <p class="small">各種小型服飾店、配件、鞋包，適合慢慢挖寶。想找泰國品牌可先逛這層。</p>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">2F｜London</span>
+              <div class="itemtitle">男裝、運動與街頭風</div>
+              <p class="small">可找 Decathlon、Crocs 及其他運動、休閒服飾；店鋪可能更動。</p>
+            </div>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">3F｜Istanbul</span>
+              <div class="itemtitle">生活雜貨、配件</div>
+              <p class="small">小飾品、禮物、保養香氛。也可找 EVEANDBOY、LUSH。</p>
+            </div>
+          </article>
+        </div>
+
+        <h2 id="t-exchange">💱 Terminal 21｜換匯</h2>
+        <div class="card accent-gold">
+          <span class="tag">豪億與朋友／Asok 民宿附近</span>
+          <div class="itemtitle">Terminal 21 Asok｜G 樓 Rome｜SuperRich</div>
+          <p class="small">Terminal 21 官方店鋪頁列為 <strong>GF（G 樓）KIG406A</strong>，商場公告亦稱 G 樓 Rome 區。商場官方頁面顯示 10:00–22:00，但第三方資料顯示櫃檯可能提早打烊，<strong>實際營業時間請以當日櫃檯為準</strong>。若換匯店排隊太久，可先逛 Pier 21 再回來。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Superrich+Thailand+Terminal+21+Asok+G+Floor" rel="noopener" target="_blank">📍 Terminal 21 換匯</a>
+            <a class="btn secondary" href="https://www.terminal21.co.th/asok/shop/detail/en/1144/superrich" rel="noopener" target="_blank">官方店鋪資訊 ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">備用選項</span>
+          <div class="itemtitle">BTS Asok／MRT Sukhumvit 附近換匯</div>
+          <p class="small">若 Terminal 21 內的 SuperRich 沒營業，BTS Asok 站周邊、MRT Sukhumvit 地下商場也有換匯櫃檯；不要只憑「SuperRich」名字判斷分店，先確認地址與當天營業狀況。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=SuperRich+Exchange+BTS+Asok+Station" rel="noopener" target="_blank">📍 BTS Asok 換匯</a>
+          </div>
+        </div>
+
+        <h3 style="margin-top:26px;">🧭 分組行動速查</h3>
+        <div class="card small">
+          <strong style="color:var(--gold-light);font-size:15px;">給豪億與朋友｜到民宿後怎麼玩？</strong>
+          <p>先確認民宿能否入內、行李是否能妥善放置。若已安頓好：步行到 Terminal 21 → 5F Pier 21 吃點東西／喝飲料 → 1–3F 逛泰國小店 → 想按摩就選 Soi 19 → 依群組通知回民宿集合。若只是短暫等待，先逛商場即可，別排一小時按摩。</p>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Terminal+21+Asok+Bangkok" rel="noopener" target="_blank">📍 Terminal 21 導航</a>
+          </div>
+        </div>
+
+        <div class="card small">
+          <strong style="color:var(--gold-light);font-size:15px;">給 Tera、Rex｜EMSPHERE → Terminal 21</strong>
+          <p>從 BTS Phrom Phong 搭往 Khu Khot 方向，一站到 Asok，跟著 Terminal 21／Exit 1 指標走連通道。逛完再走回民宿；民宿精確入口與步行路線以房東提供的地址為準。</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB 5: MASSAGE -->
+    <div aria-labelledby="button-massage" class="tab-panel" id="tab-massage" role="tabpanel">
+      <div class="crew-bar">
+        <span class="crew-badge highlight">👥 全體下午自由時段適用</span>
+        <span class="crew-badge">集中於 Asok／Sukhumvit 19 民宿周邊</span>
+      </div>
+
+      <h2>💆 Asok／Sukhumvit 19 附近按摩</h2>
+      <div class="callout">只列 Asok 民宿與 Terminal 21 周邊選項；以下均未預約。店家是否營業、實際位置、價錢及空位請以當日資訊為準。<strong>18:00 須回民宿集合</strong>，請自行預留交通與步行時間。</div>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <div class="itemtitle">Healthy Massage Sukhumvit 19</div>
+            <p class="small">Soi 19，距商場不遠。適合想做泰式按摩或足部按摩的人。</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Healthy+Massage+Sukhumvit+19+Bangkok" rel="noopener" target="_blank">📍 地圖</a>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <div class="itemtitle">WellCare Massage Sukhumvit 19</div>
+            <p class="small">同在 Soi 19，可與其他店比較現場價目及空位。</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=WellCare+Massage+Sukhumvit+19+Bangkok" rel="noopener" target="_blank">📍 地圖</a>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <div class="itemtitle">ThaiThai Massage Terminal21 Asoke</div>
+            <p class="small">Soi 19，靠近商場，適合不想走遠的人。</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=ThaiThai+Massage+Terminal21+Asoke" rel="noopener" target="_blank">📍 地圖</a>
+          </div>
+        </article>
+        <article class="card">
+          <div>
+            <div class="itemtitle">LIFE MASSAGE BTS ASOK</div>
+            <p class="small">靠 BTS Asok，適合搭車回來順便休息。</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=LIFE+MASSAGE+BTS+ASOK+Bangkok" rel="noopener" target="_blank">📍 地圖</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- TAB 6: TRANSPORT -->
+    <div aria-labelledby="button-transport" class="tab-panel" id="tab-transport" role="tabpanel">
+      <div class="crew-bar">
+        <span class="crew-badge highlight">👥 全員 18:00 民宿集合適用</span>
+        <span class="crew-badge">Tera、Rex、豪億與朋友</span>
+      </div>
+
+      <h2>🚆 回民宿與前往晚餐餐廳</h2>
+      <div class="callout">📌 <strong>18:00 在 Asok 民宿集合</strong>。晚餐 <strong>19:45 Chom Arun（3F Rooftop）</strong>，請依當日群組與領隊通知決定集合及出發方式；時間為原行程安排，不代表交通已預約。</div>
+
+      <div class="card">
+        <span class="tag">第一段｜EMSPHERE → Asok 民宿</span>
+        <div class="itemtitle">BTS Phrom Phong → Asok（一站）</div>
+        <p class="small">從 EMSPHERE 步行至 BTS Phrom Phong，搭往 Khu Khot／Mo Chit 方向一站至 Asok，再依民宿實際入口步行。若人在 Terminal 21 或 Sukhumvit 19 一帶，通常可直接步行回民宿，不必搭 BTS。</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=BTS+Phrom+Phong+Bangkok&amp;destination=BTS+Asok+Bangkok&amp;travelmode=transit" rel="noopener" target="_blank">📍 BTS 一站導航</a>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=13+Sukhumvit+19+Alley+Lane+2+Bangkok" rel="noopener" target="_blank">📍 民宿地址地圖搜尋</a>
+        </div>
+        <p class="muted">民宿地址地圖為搜尋結果，尚未核實建物入口；以房東提供的正式定位為準。</p>
+      </div>
+
+      <div class="card accent-gold">
+        <span class="tag">第二段｜Asok → Chom Arun 晚餐</span>
+        <div class="itemtitle">MRT Sukhumvit → Sanam Chai，再步行</div>
+        <p class="small">從民宿步行至 MRT Sukhumvit，搭藍線往 Sanam Chai 方向（途中不必換線），下車後依 Google Maps 步行至昭披耶河畔的 Chom Arun。實際班次、步行時間及入口請當天導航確認。</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=MRT+Sukhumvit+Bangkok&amp;destination=Chom+Arun+Bangkok&amp;travelmode=transit" rel="noopener" target="_blank">📍 捷運路線導航</a>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Chom+Arun+Bangkok" rel="noopener" target="_blank">📍 Chom Arun 餐廳地圖</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag">備案｜直接搭車</span>
+        <div class="itemtitle">計程車／叫車前往 Chom Arun</div>
+        <p class="small">若集合較晚、同行者不方便走路，可直接叫車；曼谷尖峰時段塞車不確定性較高，請勿把 Google Maps 當下預估視為保證抵達時間。</p>
+        <div class="btn-row">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=13+Sukhumvit+19+Alley+Lane+2+Bangkok&amp;destination=Chom+Arun+Bangkok&amp;travelmode=driving" rel="noopener" target="_blank">📍 開啟開車路線</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      資料依據：Terminal 21 官方店鋪公告、SuperRich 1965 官方 2026/11 機場新店公告、EMSPHERE 公開商家資訊；更新 2026/11/17。機場 3 號門為團隊約定集合點，司機實際停車／上車位置請當天確認。本頁可獨立分享；實際行程仍以最新行程總表為準。
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const tabs = [...document.querySelectorAll('.tab-button')];
+      const panels = [...document.querySelectorAll('.tab-panel')];
+      const valid = new Set(tabs.map(t => t.dataset.tab));
+
+      const nav = document.querySelector('.nav');
+      const navWrap = document.querySelector('.nav-wrap');
+      function activate(id, scrollToNav = false){
+        if (!valid.has(id)) id = 'airport';
+        let selectedButton;
+        tabs.forEach(b => {
+          const active = b.dataset.tab === id;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-selected', String(active));
+          b.tabIndex = active ? 0 : -1;
+          if (active) selectedButton = b;
+        });
+        panels.forEach(p => {
+          const active = p.id === 'tab-' + id;
+          p.classList.toggle('active', active);
+          p.hidden = !active;
+        });
+        // 只水平捲動分頁列，避免 scrollIntoView 連整頁一起移動。
+        if (selectedButton) {
+          const left = selectedButton.offsetLeft - nav.offsetLeft;
+          const targetLeft = left - (nav.clientWidth - selectedButton.offsetWidth) / 2;
+          nav.scrollTo({left: Math.max(0, targetLeft), behavior: 'smooth'});
+        }
+        if (location.hash !== '#' + id) history.replaceState(null, '', '#' + id);
+        if (scrollToNav) {
+          // 僅使用視窗的垂直捲動；固定導覽列會留在上緣。
+          const top = navWrap.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({top, behavior: 'instant'});
+        }
+      }
+
+      tabs.forEach(b => b.addEventListener('click', () => activate(b.dataset.tab, true)));
+
+      document.querySelectorAll('.quick-button').forEach(b => b.addEventListener('click', () => {
+        const target = document.getElementById(b.dataset.target);
+        if (target && !target.closest('.tab-panel[hidden]')) {
+          target.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        }
+      }));
+
+      const initial = location.hash.slice(1);
+      activate(valid.has(initial) ? initial : 'airport');
+      window.addEventListener('hashchange', () => {
+        const id = location.hash.slice(1);
+        if (valid.has(id)) activate(id);
+      });
+    })();
+
+    const food = [
+      ['Pad Thai Fai Ta Lu','G｜泰式炒河粉','第一次來泰國很適合；想吃經典炒河粉選這間'],
+      ['Nara Thai','G｜泰式餐廳','想坐下來點幾道泰國菜一起分享'],
+      ['Fatt Chicken Rice','G｜雞飯','不想研究菜單、想快速吃飽'],
+      ['ChaTraMue','G｜泰式奶茶','經典手標泰奶，順手帶一杯'],
+      ['Pang Cha','G｜泰式甜品','想吃冰涼甜點可看看'],
+      ['CO LIMITED','GM｜泰式料理','想吃泰國料理又偏好餐廳座位'],
+      ['Ba Hao Tian Mi','GM｜甜品','飯後想找甜品可以考慮'],
+      ['Gordon Ramsay Street Pizza','GM｜披薩','不想吃泰式料理的備案']
+    ];
+
+    const shops = [
+      ['Another Story','M｜設計選物','泰國設計雜貨、禮品、生活小物'],
+      ['Gentlewoman','1F｜服飾','泰國人氣服飾與配件'],
+      ['Daddy and the Muscle Academy','1F｜服飾','繽紛、可愛風格的泰國品牌'],
+      ['EVEANDBOY','1F｜美妝','泰國與國際美妝品牌集合'],
+      ['POMELO','1F｜服飾','日常女裝、配件'],
+      ['BEAMS','M｜服飾','日系潮流與選品'],
+      ['FlynOw III','M｜設計服飾','泰國時尚設計品牌'],
+      ['IKEA Sukhumvit','3F｜生活','市中心 IKEA；時間不夠可跳過'],
+      ['Flying Tiger','2F｜生活雜貨','小物與有趣雜貨']
+    ];
+
+    function card(x){
+      let q = encodeURIComponent(x[0] + ' EMSPHERE Bangkok');
+      return `<article class="card"><div><span class="tag">${x[1]}</span><div class="itemtitle">${x[0]}</div><div class="small">${x[2]}</div></div><div class="btn-row"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">📍 地圖／照片</a></div></article>`;
+    }
+
+    document.getElementById('foods').innerHTML = food.map(card).join('');
+    document.getElementById('shops').innerHTML = shops.map(card).join('');
+  </script>
+</body>
+</html>
