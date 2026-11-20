@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-20 16:51",
+  "updated": "2026-11-20 17:51",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -136,8 +136,8 @@
           "type": "transport",
           "status": "confirmed",
           "map_url": "",
-          "sub_tags": "van",
-          "card_summary": "BKK 二樓 3 號出口交放大件行李上包車，4人輕裝搭機場快線 ARL 轉 MRT 藍線直達餐廳",
+          "sub_tags": "mrt",
+          "card_summary": "【行李上包車／人員自搭 ARL+MRT】BKK 2F 3號出口交放大件行李上包車，4人輕裝自搭機場快線 ARL 轉 MRT 藍線直達餐廳",
           "local_name": "VIP 豪華廂型車 / 機場快線 ARL",
           "local_address": "曼谷蘇凡納布國際機場 (BKK) ➔ Chom Arun",
           "contact_phone": "",
@@ -197,11 +197,11 @@
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "featured_food",
-          "card_summary": "19:45 Rooftop 8人訂位已確認（最多8人），20:00前到場；先到部分人可否保留整桌待詢問",
+          "card_summary": "19:45 Rooftop 8人訂位已書面確認（最多8人），20:00前到場；先到部分人可否保留整桌待店家確認",
           "local_name": "ร้านอาหารชมอรุณ (Chom Arun Restaurant)",
           "local_address": "392/53 Maha Rat Rd, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok",
           "contact_phone": "095-446-4199",
-          "booking_ref": "原訂6人已確認 (加2人待店家回覆)"
+          "booking_ref": "8人 Rooftop 訂位已書面確認 (Daruei Juan / 最多8人 / 20:00前到場)"
         },
         {
           "time": "21:30–23:00",
@@ -816,7 +816,7 @@
           "type": "accommodation",
           "status": "confirmed",
           "map_url": "",
-          "sub_tags": "checkin",
+          "sub_tags": "luggage",
           "card_summary": "83 Siam Fandee Cafe 已確認可寄放行李；放妥後司機繼續載六人前往鄭王廟周邊午餐",
           "local_name": "83 Siam Fandee Cafe",
           "local_address": "83 Sap Road, Bang Rak, Bangkok",
@@ -958,7 +958,7 @@
           "type": "transport",
           "status": "confirmed",
           "map_url": "",
-          "sub_tags": "van",
+          "sub_tags": "transport",
           "card_summary": "逛街結束後搭車先回 83 Siamfandee Suites 民宿放戰利品卸貨",
           "local_name": "83 Siamfandee Suites",
           "local_address": "83 Sap Road, Bang Rak, Bangkok",
