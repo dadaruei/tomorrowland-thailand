@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-21 13:00",
+  "updated": "2026-11-21 14:17",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -885,18 +885,33 @@
         },
         {
           "time": "20:30–22:30",
-          "title": "Talat Phlu 鐵道老街小吃巡禮 ＆ First One Night Market 逛夜市酒吧 ＆ 自行返回住宿",
+          "title": "Talat Phlu 鐵道老街小吃巡禮 ＆ First One Night Market 逛夜市酒吧",
           "location": "Talat Phlu 鐵道老街小吃 ➔ First One Night Market Talat Phlu",
-          "note": "晚餐後展開老街由北往南順路漫步巡禮（總長約 500 公尺 / 純步行約 7 分鐘）：途經 Sunee 叉燒飯、Sarinthip 百年泰式煎餅、品嚐 Ni-Ang 招牌蛋黃冰淇淋（營業至 02:00）、可選 Auntie Kia 現煎韭菜粿（李寶玉週一公休之替代首選）；隨後步行約 3 分鐘抵達 First One Night Market Talat Phlu，享受啤酒花園 Live 音樂演奏、夜市特色小吃與逛街購物（夜市營業至 00:00，免訂位）。約 22:00–22:30 依團員體力各自叫車或搭乘大眾運輸返回各自住宿（4 人住 83 Siamfandee Suites、2 人 Every Surawong），不另安排包車。",
+          "note": "晚餐後展開老街由北往南順路漫步巡禮（總長約 500 公尺 / 純步行約 7 分鐘）：途經 Sunee 叉燒飯、Sarinthip 百年泰式煎餅、品嚐 Ni-Ang 招牌蛋黃冰淇淋（營業至 02:00）、可選 Auntie Kia 現煎韭菜粿（李寶玉週一公休之替代首選）；隨後步行約 3 分鐘抵達 First One Night Market Talat Phlu，享受啤酒花園 Live 音樂演奏、夜市特色小吃與逛街購物（夜市營業至 00:00，免訂位）。預計逛至 22:30，之後另列返程行程。",
           "type": "food",
           "status": "confirmed",
           "map_url": "https://www.google.com/maps/place//data=!4m2!3m1!19sChIJAU-m1CCZ4jAR5WBsOvdOQBM",
           "sub_tags": "food",
-          "card_summary": "沿鐵道老街由北往南散步 500 米吃 Ni-Ang 蛋黃冰等小吃，再到 First One 夜市喝啤酒逛街，結束後依住宿各自搭車返回",
+          "card_summary": "沿鐵道老街吃 Ni-Ang 蛋黃冰等小吃，First One 夜市喝啤酒逛街至 22:30；返程另列獨立住宿卡片",
           "local_name": "ตลาดพลู ＆ เฟิร์สวัน ไนท์มาร์เก็ต (First One Night Market Talat Phlu)",
           "local_address": "Thoet Thai Rd ＆ 20 Ratchadaphisek Rd, Talat Phlu, Thon Buri, Bangkok",
           "contact_phone": "+66 99 154 4949",
           "booking_ref": "免訂位 (鐵道街頭小吃 ＆ 夜市自由前往)"
+        },
+        {
+          "time": "22:30–23:30",
+          "title": "離開 First One 夜市 → 返回各自住宿",
+          "location": "First One Night Market Talat Phlu → 83 Siamfandee Suites / Every Surawong",
+          "note": "22:30 預計離開夜市（非抵達住宿時間），六人依住宿分流：4 人返回 83 Siamfandee Suites、2 人（Tara、Rex）返回 Every Surawong。可各自叫 Grab / 計程車，或由 BTS Talat Phlu 站搭乘大眾運輸；實際轉乘路線、末班車及步行距離待確認，不另安排包車。網站獨立返程卡片需附 BTS Talat Phlu、83 Siamfandee Suites、Every Surawong 地圖入口。",
+          "type": "accommodation",
+          "status": "verify",
+          "map_url": "",
+          "sub_tags": "accommodation",
+          "card_summary": "22:30 離開 First One 夜市；4 人回 83 Siamfandee Suites，2 人回 Every Surawong；BTS／叫車彈性選擇",
+          "local_name": "83 Siamfandee Suites / Every Surawong",
+          "local_address": "",
+          "contact_phone": "",
+          "booking_ref": ""
         }
       ]
     },
