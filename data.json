@@ -1,6 +1,6 @@
 {
   "title": "Tomorrowland Thailand 2026 | Our Journey",
-  "updated": "2026-11-21 21:08",
+  "updated": "2026-11-21 21:57",
   "timezone": "Asia/Bangkok",
   "days": [
     {
@@ -29,7 +29,7 @@
           "location": "BKK 機場 → EMSPHERE",
           "note": "Tara、Rex 10:35 抵達 BKK，預估11:30於2F 3號出口與司機會合，專車直接送往 EMSPHERE（預估12:15–12:45抵達）。兩人下車自由活動，行李留車上；司機立即折返 BKK 接豪億與朋友，隨後將兩組行李一併送到 Asok 民宿。",
           "type": "transport",
-          "status": "verify",
+          "status": "confirmed",
           "map_url": "",
           "sub_tags": "van",
           "card_summary": "11:30 BKK接 Tara、Rex，直接送 EMSPHERE；行李由司機送回民宿，不先繞 Asok",
@@ -48,8 +48,8 @@
           "map_url": "",
           "sub_tags": "",
           "card_summary": "EMSPHERE 午餐、SuperRich 換匯、特色商店；按摩與甜點自由加選",
-          "local_name": "Terminal 21 Asok",
-          "local_address": "88 Soi Sukhumvit 19, Khlong Toei Nuea, Watthana, Bangkok",
+          "local_name": "EMSPHERE",
+          "local_address": "628 Sukhumvit Rd, Khlong Tan, Khlong Toei, Bangkok 10110",
           "contact_phone": "",
           "booking_ref": ""
         },
@@ -59,14 +59,14 @@
           "location": "曼谷蘇凡納布國際機場 (BKK) ➔ Asoke 公寓",
           "note": "豪億與朋友（首晚同行朋友、非正式8人團員）班機預計13:05抵達BKK。司機送 Tara、Rex 至 EMSPHERE 後折返 BKK 接兩人；可等候司機，實際接送依出關及路況彈性調整。送往 Asok 民宿時一併卸下 Tara、Rex 行李。到民宿後自由參考網站攻略，不指定逛街或按摩；18:00與Tara、Rex集合搭 MRT 赴 Chom Arun。",
           "type": "transport",
-          "status": "verify",
+          "status": "confirmed",
           "map_url": "",
           "sub_tags": "van",
           "card_summary": "豪億與朋友13:05抵達BKK，可等候司機；送Asok後自由活動，18:00民宿集合",
           "local_name": "VIP 豪華廂型車 (8人座)",
           "local_address": "曼谷蘇凡納布國際機場 (BKK) ➔ Bangkok Family trip BTS Asoke",
           "contact_phone": "",
-          "booking_ref": "暫定 (司機接送／自行前往雙軌備案)"
+          "booking_ref": "已預約包車 (司機接送／自行前往雙軌備案)"
         },
         {
           "time": "15:00–15:30",
@@ -331,11 +331,11 @@
           "booking_ref": "已訂房 (IHG 6a8ea222-2da7-49e2-b90d-ceb4125f1530)"
         },
         {
-          "time": "18:00",
-          "title": "搭乘大會官方接駁專車前往會場",
-          "location": "Holiday Inn Express Rayong ➔ Wisdom Valley",
-          "note": "全員於飯店大廳集合，搭乘 18:00 Tomorrowland Thailand 官方接駁車前往 Wisdom Valley 會場。預估 18:30～18:50 抵達接駁下車點，下車後步行約 25 分鐘（包含上坡），預估 19:15 抵達活動入口、19:30 完成安檢入場（以上抵達與入場時間均為估算，非官方確認時間）。",
-          "type": "transport",
+          "time": "17:00–23:00",
+          "title": "The Gathering 開幕派對 @ Wisdom Valley",
+          "location": "Wisdom Valley, Pattaya",
+          "note": "官方開幕派對（官方活動時間 17:00～23:00，泰國當地時間）。團隊搭乘 18:00 官方接駁車前往，預估 18:30～18:50 抵達下車點、步行約 25 分鐘（含上坡）、預估 19:15 抵達活動入口並於 19:30 完成安檢入場（抵達與入場時間為團隊估算）。須佩戴大會手環入場。",
+          "type": "festival",
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "",
@@ -346,11 +346,11 @@
           "booking_ref": ""
         },
         {
-          "time": "17:00–23:00",
-          "title": "The Gathering 開幕派對 @ Wisdom Valley",
-          "location": "Wisdom Valley, Pattaya",
-          "note": "官方開幕派對（官方活動時間 17:00～23:00，泰國當地時間）。團隊搭乘 18:00 官方接駁車前往，預估 18:30～18:50 抵達下車點、步行約 25 分鐘（含上坡）、預估 19:15 抵達活動入口並於 19:30 完成安檢入場（抵達與入場時間為團隊估算）。須佩戴大會手環入場。",
-          "type": "festival",
+          "time": "18:00",
+          "title": "搭乘大會官方接駁專車前往會場",
+          "location": "Holiday Inn Express Rayong ➔ Wisdom Valley",
+          "note": "全員於飯店大廳集合，搭乘 18:00 Tomorrowland Thailand 官方接駁車前往 Wisdom Valley 會場。預估 18:30～18:50 抵達接駁下車點，下車後步行約 25 分鐘（包含上坡），預估 19:15 抵達活動入口、19:30 完成安檢入場（以上抵達與入場時間均為估算，非官方確認時間）。",
+          "type": "transport",
           "status": "confirmed",
           "map_url": "",
           "sub_tags": "",
@@ -869,7 +869,7 @@
           "booking_ref": "已確認 (18:30燈光秀/19:00水舞秀)"
         },
         {
-          "time": "19:15–20:30",
+          "time": "19:35–20:30",
           "title": "符德興百年米粉泰式晚餐（Tek Heng Mee Krob Jeen Lee，優先正餐）",
           "location": "Tek Heng Mee Krob Jeen Lee（符德興 / เต็กเฮง หมี่กรอบจีนหลี）",
           "note": "19:00 水舞結束後（約 19:15），六人分乘 2 台 Grab / 計程車（車程約 15–25 分鐘，經 Lat Ya Rd 與 Thoet Thai Rd，避開 BTS 站步行 1.3 公里趕不及打烊之時間風險）直奔 Talat Phlu 運河橋旁百年老字號「符德興」享用正式晚餐（預計 19:35–19:45 入座）。必點招牌：Mee Krob 泰式百年宮廷酥脆米粉、酸辣冬蔭蝦湯、泰式中菜熱炒。表定營業至 21:00，待電話/FB確認週一晚間營業與六人留位；若遇客滿或提早打烊，正餐備案為營業至 23:00 之楚龍炒粿條。",
@@ -926,7 +926,7 @@
           "location": "Every Surawong ➔ 曼谷蘇凡納布國際機場 (BKK)",
           "note": "A 組 Tara、Rex（2 人）08:50 由 KKday 預約專車（供應商 GLABMA，經濟型 5 座，免費候車 30 分鐘）於 Every Surawong 飯店接送前往蘇凡納布國際機場 BKK MAIN，搭乘 12:50 泰國航空 TG634 返台（17:20 抵 TPE）。訂車已預訂成功（訂單編號：26KK224124027），司機資訊待通知（預計 12/15 04:50 前更新）。",
           "type": "transport",
-          "status": "verify",
+          "status": "confirmed",
           "map_url": "",
           "sub_tags": "flight",
           "card_summary": "A 組 Tara、Rex（2 人）08:50 由 KKday 預約專車（訂單 26KK224124027）於 Every Surawong 飯店送機赴 BKK，搭 12:50 TG634 返台（訂車已預訂成功）",
