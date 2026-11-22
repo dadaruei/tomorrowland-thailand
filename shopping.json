@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "source": "google-sheets",
+  "updated": "2026-11-22 11:33",
+  "items": [
+    {
+      "store": "Siam／Chit Lom／One Bangkok",
+      "name": "迷你調味料吊飾",
+      "description": "泰式小吃桌邊調味料架造型迷你吊飾組（含辣椒粉、鹽、黑胡椒、白胡椒四入，Siam Center 泰國設計師選物店商品）",
+      "priority": "必買 🔥",
+      "quantity": "",
+      "price": "影片稱295",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Silom／Sathon",
+      "name": "Nang Led Silom Soi 7（ร้านนางเล็ด สีลมซอย7）",
+      "description": "是隆路七巷知名古早味泰式米餅（三姊妹米餅 ร้านนางเล็ด สีลมซอย7），分無糖、半糖、全糖口味；貼文稱已改為預製品運送販售",
+      "priority": "必買 🔥",
+      "quantity": "",
+      "price": "無糖50／半糖50／全糖60（截圖）",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "Clorets 西瓜涼糖",
+      "description": "泰國限定西瓜口味無糖薄荷涼糖（Clorets Mints Watermelon，每盒 20 粒裝，清涼消暑伴手禮）",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "影片貨架標示32",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "KUNNA Coconut Waffle Filled with Milk Chocolate",
+      "description": "泰國知名伴手禮品牌 KUNNA 出品之椰子華夫脆餅夾牛奶巧克力（90g 盒裝，無麩質 Gluten-Free）",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "官網參考價 ฿145／盒（90g，Big C Online / Tops Online 資訊）",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "Manora Fried Shrimp Chips",
+      "description": "泰國老牌 Manora 經典黑胡椒蒜香炸蝦片（提供 90g 鐵罐裝及 10g×12 小袋分享包）",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "10g×12入袋裝官網參考價 ฿51（Big C Online 資訊；90g 鐵罐裝約 ฿50–70）",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "NSL Selection Ham Wrapped with Cheese",
+      "description": "7-Eleven 熱門代工品牌 NSL 出品之火腿包起司點心（可請店員微波加熱）",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "杜拜巧克力Q餅",
+      "description": "巧克力Q餅；實際品牌與口味待核實",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "影片標示39",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "泰式奶茶（Thai Milk Tea）",
+      "description": "瓶裝泰式奶茶；畫面品牌標誌為泰文（泰國 7-Eleven 常見瓶裝泰奶品牌如 ChaTraMue 手標牌、Ichitan 等）",
+      "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "影片標示20–26",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Nautilus Tuna Spread with Crackers — Classic",
+      "description": "鮪魚抹醬搭配餅乾即食點心；畫面為橘色 Classic 款",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "CHAO SUA（เจ้าสัว）Rice Cracker with Pork Floss 肉鬆米餅",
+      "description": "畫面橘色包裝標示 Rice Cracker，影片提及紅色、橘色款有肉鬆；口味差異待核實",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "截圖貨架標籤疑似 ฿55，未核實",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "KUNNA Crispy Thai Coconut／Durian（椰子脆片／榴槤脆片）",
+      "description": "KUNNA 品牌兩款脆片：Crispy Thai Coconut、Crispy Thai Durian",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "泰式米餅／Rice Crackers（黃色標籤袋裝，品牌待辨識）",
+      "description": "透明大袋裝米餅，黃色標籤印有 RICE CRACKERS；可見混合口味或配料",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片促銷貼紙：買 5 送 1，฿345（非即時價格）",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "小老闆海苔（Tao Kae Noi，綠色包裝）",
+      "description": "泰式海苔片；綠色包裝，實際口味待核對",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "บีทาเก้น Betagen Kombucha",
+      "description": "瓶裝康普茶，包裝標示 LIVE PROBIOTICS",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "meiji 綠色瓶裝飲品",
+      "description": "綠色包裝、青綠色水果圖案的乳飲品；口味待辨識",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "虎牌泰式茶飲（品牌待確認）",
+      "description": "橘色瓶裝泰式茶飲，正面老虎圖案",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "Jego น้ำฝรั่ง（芭樂汁）",
+      "description": "綠色瓶裝芭樂飲料，包裝可見 250 ml",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "Laemthong 斑蘭味切片吐司",
+      "description": "Pandan Flavored Sliced Bread；綠色切片吐司",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven 通路",
+      "name": "Mahanakhon 斑蘭嫩椰子小糕點",
+      "description": "Pandan Hot Cake with Young Coconut，綠色六入盒裝",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Big C Mystery Bag 限定購物袋",
+      "description": "Big C 特色風景圖案購物袋；影片稱限定款",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿139",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Carada 魷魚風味餅乾",
+      "description": "紅色包裝，Squid Flavor，泰國零食",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Lay's 泰式當地風味洋芋片（綠粉包裝）",
+      "description": "綠粉雙色包裝；畫面有辣椒與餐點圖片，確切口味待辨識",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Big Bag 泰式圈圈零食（原味／鮮味）",
+      "description": "綠紅色包裝，影片稱鮮味十足；品牌圖案 PR，實際品名與口味需核對",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "Chocolate Covered Potato Chips 巧克力包覆洋芋片",
+      "description": "深藍色盒裝，洋芋片裹巧克力",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "ABC 蒜香胡椒味洋芋片",
+      "description": "紫色包裝，Garlic and Pepper 口味",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Wheat Snack Sour Cream & Onion Flavor 酸奶油洋蔥味穀物脆片",
+      "description": "MUJI 無印良品零食；包裝標示 160 kcal",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿39",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Long Bean Snack Sweet Chilli Sauce Flavor 甜辣長豆脆片",
+      "description": "長豆脆片，甜辣醬風味；包裝標示 120 kcal",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿39",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Coconut Snack Cocoa 可可椰子脆片",
+      "description": "35g 可可口味椰子零食",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿59",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Coconut Roll with Milk Chocolate 牛奶巧克力椰子捲",
+      "description": "椰子捲搭配牛奶巧克力",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿99",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Shrimp Snack Sea Salt 海鹽蝦脆片",
+      "description": "25g 海鹽口味蝦零食",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿99",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Coconut Snack 原味椰子脆片",
+      "description": "35g 椰子零食",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿59",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "MUJI 泰國門市",
+      "name": "MUJI Matcha Powder 抹茶粉",
+      "description": "袋裝抹茶粉，包裝示意為綠色抹茶飲",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿129",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路",
+      "name": "MALI 榴槤味椰香煉奶",
+      "description": "MALI Easy Squeeze 榴槤口味椰香煉奶；可搭配吐司、糯米飯、雪糕、刨冰",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    }
+  ]
+}
