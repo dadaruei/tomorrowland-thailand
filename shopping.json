@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-22 13:26",
+  "updated": "2026-11-22 14:02",
   "items": [
     {
       "store": "Siam／Chit Lom／One Bangkok",
@@ -87,7 +87,7 @@
       "store": "Big C／超市通路",
       "name": "Nautilus Tuna Spread with Crackers — Classic",
       "description": "鮪魚抹醬搭配餅乾即食點心；畫面為橘色 Classic 款",
-      "priority": "未設定",
+      "priority": "必買 🔥",
       "quantity": "",
       "price": "",
       "status": "未購買",
@@ -97,7 +97,7 @@
       "store": "Big C／超市通路",
       "name": "CHAO SUA（เจ้าสัว）Rice Cracker with Pork Floss 肉鬆米餅",
       "description": "畫面橘色包裝標示 Rice Cracker，影片提及紅色、橘色款有肉鬆；口味差異待核實",
-      "priority": "未設定",
+      "priority": "必買 🔥",
       "quantity": "",
       "price": "截圖貨架標籤疑似 ฿55，未核實",
       "status": "未購買",

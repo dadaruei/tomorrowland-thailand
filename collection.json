@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-22 13:26",
+  "updated": "2026-11-22 14:02",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -494,6 +494,18 @@
       "price": "",
       "address": "嵩越路與耀華攀尼路轉角（Intersection of Song Wat Rd & Yaowa Phanit Rd，靠近 Urai 滷鵝店，Samphanthawong, Bangkok 10100）",
       "map_url": "https://www.google.com/maps/search/?api=1&query=I%20WANNA%20BANGKOK%20Song%20Wat"
+    },
+    {
+      "area": "中國城／Song Wat／Talat Noi",
+      "category": "景點體驗",
+      "name": "Song Wat 復古電影海報牆",
+      "priority": "順路可去 👍",
+      "dates": "12/16",
+      "description": "滿牆復古電影、廣告海報的街頭拍照牆（嵩越路街頭藝術打卡點）",
+      "hours": "戶外街景全天開放（建議白天 09:00–17:00 光線佳時拍攝）",
+      "price": "",
+      "address": "Song Wat Rd, Samphanthawong, Bangkok 10100（嵩越路街區沿線老屋牆面）",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Song%20Wat%20vintage%20poster%20wall%20Bangkok"
     },
     {
       "area": "中國城／Song Wat／Talat Noi",
