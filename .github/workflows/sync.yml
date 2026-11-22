@@ -1,5 +1,4 @@
-
-name: Sync public itinerary
+name: Sync public itinerary (preserve website sections)
 
 on:
   workflow_dispatch:
@@ -14,39 +13,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Fetch Google Sheets itinerary
+      - name: Safely merge public itinerary feed
         env:
           FEED_URL: ${{ secrets.PUBLIC_ITINERARY_FEED_URL }}
         run: |
-          python3 - <<'PY'
+          python3 - <<'PY_SYNC'
           import os, json, urllib.request
+          from pathlib import Path
 
           url = os.environ.get('FEED_URL')
           if not url:
               raise SystemExit('Missing PUBLIC_ITINERARY_FEED_URL')
-
-          request = urllib.request.Request(
-              url,
-              headers={'User-Agent': 'tml-journey-sync/1.0'}
-          )
-          with urllib.request.urlopen(request, timeout=30) as response:
-              data = json.load(response)
-
-          days = data.get('days', [])
-          if len(days) != 9:
-              raise SystemExit('Expected 9 days; refusing update')
-
-          with open('data.json', 'w', encoding='utf-8') as f:
-              json.dump(data, f, ensure_ascii=False, indent=2)
-          PY
-
+          with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent':'tml-journey-sync/2.0'}), timeout=30) as r:
+              incoming = json.load(r)
+          current = json.loads(Path('data.json').read_text(encoding='utf-8'))
+          days = incoming.get('days', [])
+          if not isinstance(days, list) or len(days) != 9 or sum(len(d.get('events', [])) for d in days) < 30:
+              raise SystemExit('Detailed 9-day itinerary expected (>=30 events); update refused')
+          expected = [f'2026-12-{d:02d}' for d in range(9, 18)]
+          if [d.get('date') for d in days] != expected:
+              raise SystemExit('Unexpected date sequence; update refused')
+          # Update only the itinerary fields; preserve accommodation, flights and lineup.
+          current['days'] = days
+          if isinstance(incoming.get('updated'), str):
+              current['updated'] = incoming['updated']
+          for key in ('accommodations', 'crew_flights', 'lineup'):
+              if not isinstance(current.get(key), list) or not current[key]:
+                  raise SystemExit('Required production section missing: '+key)
+          Path('data.json').write_text(json.dumps(current, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          print('Merged itinerary; preserved accommodation, crew flights, and lineup')
+          PY_SYNC
       - name: Commit refreshed itinerary
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update public itinerary"
+            git commit -m "Update itinerary without removing website sections"
             git push
           fi
