@@ -804,6 +804,13 @@
           <h2 class="text-xl sm:text-2xl font-bold text-white">🛍️ 購物清單</h2>
           <p class="text-sm text-slate-400 mt-3">由 Google 試算表單向同步；價格為參考資訊，購買狀態請在試算表修改。</p>
           <div id="shopping-source-note" class="text-xs text-slate-400 mt-2" role="status"></div>
+          <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" aria-label="購物清單篩選">
+            <label class="text-xs text-slate-300">關鍵字搜尋<input id="shopping-search" type="search" placeholder="商品、店家、備註…" class="mt-1 w-full rounded-xl border border-white/20 bg-slate-900 text-white px-3 py-2 min-h-[42px]" /></label>
+            <label class="text-xs text-slate-300">店家／區域<select id="shopping-store" class="mt-1 w-full rounded-xl border border-white/20 bg-slate-900 text-white px-3 py-2 min-h-[42px]"><option value="">全部店家／區域</option></select></label>
+            <label class="text-xs text-slate-300">必買程度<select id="shopping-priority" class="mt-1 w-full rounded-xl border border-white/20 bg-slate-900 text-white px-3 py-2 min-h-[42px]"><option value="">全部優先度</option></select></label>
+            <label class="text-xs text-slate-300">購買狀態<select id="shopping-status" class="mt-1 w-full rounded-xl border border-white/20 bg-slate-900 text-white px-3 py-2 min-h-[42px]"><option value="">全部狀態</option></select></label>
+          </div>
+          <div class="mt-3 flex flex-wrap items-center justify-between gap-2"><p id="shopping-count" class="text-xs text-slate-400" aria-live="polite"></p><button id="shopping-reset" type="button" class="rounded-xl border border-amber-400/30 text-amber-200 px-3 py-2 text-xs">清除篩選</button></div>
           <div id="shopping-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5"></div>
         </div>
         <!-- Sub-panel 3C: ✦ 行前提醒 -->
@@ -1913,6 +1920,31 @@
     }));
     renderCollections();
 
+    let shoppingItems=[];
+    const shoppingFilters={search:document.getElementById('shopping-search'),store:document.getElementById('shopping-store'),priority:document.getElementById('shopping-priority'),status:document.getElementById('shopping-status')};
+    function populateShoppingFilter(key,items){
+      const el=shoppingFilters[key];
+      [...new Set(items.map(x=>String(x[key]||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-Hant')).forEach(v=>{
+        const opt=document.createElement('option');opt.value=v;opt.textContent=v;el.appendChild(opt);
+      });
+    }
+    function renderShopping(){
+      const q=shoppingFilters.search.value.trim().toLocaleLowerCase();
+      const filtered=shoppingItems.filter(x=>{
+        if(shoppingFilters.store.value!=='' && x.store!==shoppingFilters.store.value)return false;
+        if(shoppingFilters.priority.value!=='' && x.priority!==shoppingFilters.priority.value)return false;
+        if(shoppingFilters.status.value!=='' && x.status!==shoppingFilters.status.value)return false;
+        return !q||[x.name,x.store,x.priority,x.description,x.price,x.status,x.note].some(v=>String(v||'').toLocaleLowerCase().includes(q));
+      });
+      document.getElementById('shopping-count').textContent='顯示 '+filtered.length+' / '+shoppingItems.length+' 筆購物項目';
+      document.getElementById('shopping-grid').innerHTML=filtered.map(x=>'<article class="rounded-2xl border border-amber-400/20 bg-white/[0.035] p-4">'+
+        '<div class="flex justify-between gap-2"><h3 class="font-bold text-white">'+escapeHtml(x.name||'')+'</h3><span class="text-xs text-amber-300 shrink-0">'+escapeHtml(x.priority||'')+'</span></div>'+
+        '<p class="text-xs text-slate-400 mt-2">📍 '+escapeHtml(x.store||'')+'</p>'+
+        '<p class="text-sm text-slate-300 mt-2">'+escapeHtml(x.description||'')+'</p>'+
+        '<p class="text-xs text-slate-300 mt-2">參考價格：'+escapeHtml(x.price||'待確認')+' · '+escapeHtml(x.status||'未設定')+'</p>'+
+        (x.note?'<p class="text-xs text-slate-400 mt-2">'+escapeHtml(x.note)+'</p>':'')+
+        (/^https:\/\//.test(x.url||'')?'<a class="text-sm text-amber-300 underline" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(x.url)+'">查看來源 ↗</a>':'')+'</article>').join('')||'<p class="text-slate-400">沒有符合條件的購物項目。</p>';
+    }
     async function loadShopping() {
       const target=document.getElementById('shopping-grid');
       const note=document.getElementById('shopping-source-note');
@@ -1921,16 +1953,14 @@
         if(!res.ok) throw Error('HTTP '+res.status);
         const data=await res.json();
         if(!Array.isArray(data.items)) throw Error('購物資料格式錯誤');
-        target.innerHTML=data.items.map(x=>'<article class="rounded-2xl border border-amber-400/20 bg-white/[0.035] p-4">'+
-          '<div class="flex justify-between gap-2"><h3 class="font-bold text-white">'+escapeHtml(x.name||'')+'</h3><span class="text-xs text-amber-300 shrink-0">'+escapeHtml(x.priority||'')+'</span></div>'+
-          '<p class="text-xs text-slate-400 mt-2">📍 '+escapeHtml(x.store||'')+'</p>'+
-          '<p class="text-sm text-slate-300 mt-2">'+escapeHtml(x.description||'')+'</p>'+
-          '<p class="text-xs text-slate-300 mt-2">參考價格：'+escapeHtml(x.price||'待確認')+' · '+escapeHtml(x.status||'未設定')+'</p>'+
-          (x.note?'<p class="text-xs text-slate-400 mt-2">'+escapeHtml(x.note)+'</p>':'')+
-          (/^https:\/\//.test(x.url||'')?'<a class="text-sm text-amber-300 underline" target="_blank" rel="noopener noreferrer" href="'+escapeHtml(x.url)+'">查看來源 ↗</a>':'')+'</article>').join('')||'<p class="text-slate-400">目前沒有購物項目。</p>';
+        shoppingItems=data.items;
+        ['store','priority','status'].forEach(key=>populateShoppingFilter(key,shoppingItems));
+        renderShopping();
         note.textContent=(data.source==='preview-snapshot'?'目前顯示 Preview 的部分購物備份；尚待完成正式同步設定。':'已載入 '+data.items.length+' 筆購物資料 · '+(data.updated||''));
       }catch(err){target.textContent='購物資料載入失敗：'+err.message;note.textContent='';}
     }
+    Object.values(shoppingFilters).forEach(el=>el.addEventListener(el.tagName==='INPUT'?'input':'change',renderShopping));
+    document.getElementById('shopping-reset').addEventListener('click',()=>{Object.values(shoppingFilters).forEach(el=>el.value='');renderShopping();});
     loadShopping();
 
         // Delegated click listener for day pills, sub-tabs, DJ card expand & driver big cards
