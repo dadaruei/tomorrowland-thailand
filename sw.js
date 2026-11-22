@@ -1,11 +1,11 @@
-// Tomorrowland Thailand — offline shell v10
-const CACHE = 'tml-journey-offline-v13-production-sync';
-const APP_SHELL = ['./', './index.html', './tailwind.css', './cover-background.jpg', './cover-emblem.png', './data.json', './lists.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'];
+// Tomorrowland Thailand — offline shell v11
+const CACHE = 'tml-journey-offline-v14-production-sync';
+const APP_SHELL = ['./', './index.html', './tailwind.css', './cover-background.jpg', './cover-emblem.png', './data.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
     await cache.addAll(['./index.html', './tailwind.css', './cover-background.jpg', './cover-emblem.png']);
-    await Promise.allSettled(['./', './data.json', './lists.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'].map(url => cache.add(url)));
+    await Promise.allSettled(['./', './data.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'].map(url => cache.add(url)));
     await self.skipWaiting();
   })());
 });
@@ -27,12 +27,12 @@ self.addEventListener('fetch', event => {
     try {
       const response = await fetch(request);
       if (response.ok && response.type === 'basic') {
-        const key = (url.pathname.endsWith('/data.json') || (/\/(?:lists|collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
+        const key = (url.pathname.endsWith('/data.json') || (/\/(?:collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
         await cache.put(key, response.clone());
       }
       return response;
     } catch (_) {
-      const key = (url.pathname.endsWith('/data.json') || (/\/(?:lists|collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
+      const key = (url.pathname.endsWith('/data.json') || (/\/(?:collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
       return await cache.match(key, {ignoreSearch: true}) ||
         (request.mode === 'navigate' ? await cache.match('./index.html') : undefined) ||
         Response.error();
