@@ -1,0 +1,169 @@
+{
+  "schema_version": "2.3",
+  "updated": "2026-11-22 10:58",
+  "restaurants": [
+    {
+      "area": "Asok／Phrom Phong",
+      "name": "Blue Bottle Coffee – EmQuartier",
+      "priority": "想去 ⭐",
+      "description": "藍色大型燈籠設計；人氣精品咖啡廳打卡點（EmQuartier G 樓分店）",
+      "hours": "每日 08:00–22:00（Google Maps 資訊）",
+      "url": "",
+      "note": "已核實位於 The EmQuartier G 樓且營業中（每日 08:00–22:00）"
+    },
+    {
+      "area": "Thong Lo／Ekkamai",
+      "name": "Mae Varee（แม่วารี）",
+      "priority": "想去 ⭐",
+      "description": "曼谷老字號芒果糯米飯名店，主打香甜金煌/水仙芒果搭配三色斑斕糯米飯與濃郁椰漿",
+      "hours": "每日 06:00–22:00（Google Maps 資訊）",
+      "url": "",
+      "note": "外帶為主；已核實地址（1 Thong Lo）與營業時間（06:00–22:00）；已列為 Day 1 下午自由活動可選項目"
+    },
+    {
+      "area": "Thong Lo／Ekkamai",
+      "name": "Ning’s Mango Stand（Sukhumvit 38 芒果糯米飯）",
+      "priority": "想去 ⭐",
+      "description": "街邊攤芒果糯米飯名店；影片招牌寫 Mango Thailand Mango Sticky Rice（Google Maps 登記為 Ning’s Mango Stand）",
+      "hours": "每日 13:00–22:00（Google Maps 資訊）",
+      "url": "",
+      "note": "已核實電話 +66 86 655 2752 與影片招牌一致，確為 BTS Thong Lo 旁之 Ning’s Mango Stand（每日 13:00–22:00）"
+    },
+    {
+      "area": "Siam／Chit Lom／One Bangkok",
+      "name": "Proad",
+      "priority": "想去 ⭐",
+      "description": "現烤泰式斑斕脆嫩卷（Kanom Bueang / 斑斕可麗餅卷），主打玉米、嫩椰等口味",
+      "hours": "依 CentralWorld 商場營業時間（通常 10:00–22:00；Google Maps 未單獨列時段）",
+      "url": "",
+      "note": "已核實 Google Maps 登記地標位於 CentralWorld；實際櫃位與售價以現場為準"
+    },
+    {
+      "area": "Siam／Chit Lom／One Bangkok",
+      "name": "Hashtag B (Siam Paragon)",
+      "priority": "想去 ⭐",
+      "description": "拿破崙千層蛋塔、黑糯米風味造型蛋塔（香港人氣烘焙品牌曼谷 Siam Paragon 分店）",
+      "hours": "每日 10:00–22:00（Google Maps 資訊）",
+      "url": "",
+      "note": "截圖評分4.4（134則）；已核實位於 Siam Paragon（每日 10:00–22:00），實際單顆售價與櫃位樓層以現場為準"
+    },
+    {
+      "area": "嵩越路／Talat Noi",
+      "name": "Urai Braised Goose",
+      "priority": "必去 🔥",
+      "description": "泰式滷鵝（嵩越路數十年老字號滷鵝名店，湯頭甘醇、鵝肉軟嫩，售完即止）",
+      "hours": "週一 10:00–13:00；週二至週日 10:00–13:00、16:00–19:00（Google Maps 資訊）",
+      "url": "",
+      "note": "與先前想吃的滷鵝主題相符；已核實地址與分時段營業（上午 10:00–13:00 最適合，且 12/16 需留意皇家典禮公休公告）"
+    },
+    {
+      "area": "嵩越路／Talat Noi",
+      "name": "32Bar",
+      "priority": "必去 🔥",
+      "description": "成人系手工巧克力飲品與精品可可特調（Talat Noi 老屋改建熱門可可專賣店 32Bar X）",
+      "hours": "週一至週四 10:40–19:00；週五至週日 08:30–19:00（Google Maps 資訊）",
+      "url": "",
+      "note": "截圖推薦；已核實 Talat Noi 地址（Soi Wanit 2）與營業時間（營業至 19:00）"
+    },
+    {
+      "area": "曼谷其他區域",
+      "name": "Guay Jub Mr. Joe",
+      "priority": "想去 ⭐",
+      "description": "脆皮豬、胡椒粿汁（米其林必比登推介名店，招牌為濃郁胡椒湯頭粿汁與酥脆三層肉）",
+      "hours": "每日 07:30–16:30（Google Maps 資訊）",
+      "url": "",
+      "note": "已核實地址與營業時間；僅營業至下午 16:30，適合早午餐時段前往"
+    },
+    {
+      "area": "曼谷其他區域",
+      "name": "โรตีสายไหม บังเอิญอร่อย（Bang Earn Aroi）",
+      "priority": "想去 ⭐",
+      "description": "現做泰式糖絲捲餅 Roti Sai Mai（大城府名產糖絲搭配現烙薄餅皮）",
+      "hours": "每日 24 小時營業（Google Maps 資訊，與貼文一致）",
+      "url": "",
+      "note": "已核實勝利紀念碑周邊分店（สาขาสามเหลี่ยมดินแดง，24 小時營業）"
+    }
+  ],
+  "shopping": [
+    {
+      "store": "Siam／Chit Lom／One Bangkok",
+      "name": "迷你調味料吊飾",
+      "priority": "必買 🔥",
+      "description": "泰式小吃桌邊調味料架造型迷你吊飾組（含辣椒粉、鹽、黑胡椒、白胡椒四入，Siam Center 泰國設計師選物店商品）",
+      "price": "影片稱295",
+      "status": "未購買",
+      "url": "",
+      "note": "Siam Center 3F ABSOLUTE SIAM STORE（979 Rama I Rd, Pathum Wan, Bangkok 10330）｜IG截圖｜已核實櫃位位於 Siam Center 3F（每日 10:00–22:00，官網 siamcenter.co.th）；實際庫存與售價以現場為準"
+    },
+    {
+      "store": "Silom／Sathon",
+      "name": "Nang Led Silom Soi 7（ร้านนางเล็ด สีลมซอย7）",
+      "priority": "必買 🔥",
+      "description": "是隆路七巷知名古早味泰式米餅（三姊妹米餅 ร้านนางเล็ด สีลมซอย7），分無糖、半糖、全糖口味；貼文稱已改為預製品運送販售",
+      "price": "無糖50／半糖50／全糖60（截圖）",
+      "status": "未購買",
+      "url": "",
+      "note": "Silom Soi 7, Silom, Bang Rak, Bangkok 10500（近 BTS Chong Nonsi 站）｜Threads @starcreek 截圖｜已核實為 Silom Soi 7 知名米餅攤（ร้านนางเล็ด สีลมซอย7），但營業日（週三～五或週四～五）與現場是否改為預訂配送各來源說法不一，出發前需人工確認"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "Clorets 西瓜涼糖",
+      "priority": "想買 ⭐",
+      "description": "泰國限定西瓜口味無糖薄荷涼糖（Clorets Mints Watermelon，每盒 20 粒裝，清涼消暑伴手禮）",
+      "price": "影片貨架標示32",
+      "status": "未購買",
+      "url": "",
+      "note": "Big C Supercenter 及泰國各大 7-Eleven 超商糖果架｜IG @imhenryjiang 截圖｜促銷買10送1為影片當時資訊；已核實為 Big C 與 7-Eleven 常見開架商品（影片貨架標示 ฿32，實際價格依門市促銷為準）"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "KUNNA Coconut Waffle Filled with Milk Chocolate",
+      "priority": "想買 ⭐",
+      "description": "泰國知名伴手禮品牌 KUNNA 出品之椰子華夫脆餅夾牛奶巧克力（90g 盒裝，無麩質 Gluten-Free）",
+      "price": "官網參考價 ฿145／盒（90g，Big C Online / Tops Online 資訊）",
+      "status": "未購買",
+      "url": "",
+      "note": "Big C Supercenter（如 Big C Ratchadamri）及 Tops 超市零食區｜IG @imhenryjiang 截圖｜已核實 Big C 與 Tops 均有販售（90g 盒裝，官網標價 ฿145）；適合 12/14 或 12/15 採買日購買"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "Manora Fried Shrimp Chips",
+      "priority": "想買 ⭐",
+      "description": "泰國老牌 Manora 經典黑胡椒蒜香炸蝦片（提供 90g 鐵罐裝及 10g×12 小袋分享包）",
+      "price": "10g×12入袋裝官網參考價 ฿51（Big C Online 資訊；90g 鐵罐裝約 ฿50–70）",
+      "status": "未購買",
+      "url": "",
+      "note": "Big C Supercenter（如 Big C Ratchadamri）及泰國各大超商零食區｜IG @imhenryjiang 截圖｜已核實 Big C 常態販售（10g×12 小包裝官網標價 ฿51，另有 90g 鐵罐裝），適合分送旅伴或帶回國"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "NSL Selection Ham Wrapped with Cheese",
+      "priority": "想買 ⭐",
+      "description": "7-Eleven 熱門代工品牌 NSL 出品之火腿包起司點心（可請店員微波加熱）",
+      "price": "",
+      "status": "未購買",
+      "url": "",
+      "note": "泰國各大 7-Eleven 門市冷藏鮮食區｜Threads截圖｜已核實為泰國 7-Eleven 常態冷藏熟食商品（NSL Foods 為 CP 旗下熱壓吐司與鮮食供應商），各門市進貨依現場為準"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "杜拜巧克力Q餅",
+      "priority": "想買 ⭐",
+      "description": "巧克力Q餅；實際品牌與口味待核實",
+      "price": "影片標示39",
+      "status": "未購買",
+      "url": "",
+      "note": "泰國 7-Eleven 門市（影片推薦；依各門市鋪貨為準）｜IG @mirumo0201 截圖｜價格為影片標示，非即時售價；已核實為 7-Eleven 通路商品，因未附泰文/英文品牌全名，現場需依包裝辨識確認"
+    },
+    {
+      "store": "7-11／Big C 通路",
+      "name": "泰式奶茶（Thai Milk Tea）",
+      "priority": "想買 ⭐",
+      "description": "瓶裝泰式奶茶；畫面品牌標誌為泰文（泰國 7-Eleven 常見瓶裝泰奶品牌如 ChaTraMue 手標牌、Ichitan 等）",
+      "price": "影片標示20–26",
+      "status": "未購買",
+      "url": "",
+      "note": "泰國 7-Eleven 門市冷藏飲料櫃｜IG @mirumo0201 截圖｜已核實為 7-Eleven 飲品櫃常售品項（價格依品牌約 ฿20–35 不等），畫面具體泰文品牌待現場比對"
+    }
+  ]
+}
