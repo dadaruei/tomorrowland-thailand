@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-22 14:10",
+  "updated": "2026-11-22 14:13",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -686,6 +686,66 @@
       "price": "截圖 ฿200–600",
       "address": "001 Liap Chai Fang Road, Mueang Rayong, Rayong",
       "map_url": "https://www.google.com/maps/search/?api=1&query=Laem%20Charoen%20Seafood%20Rayong%20Rayong%20Thailand"
+    },
+    {
+      "area": "羅勇",
+      "category": "景點市集",
+      "name": "Sai-Lang Night Market（ตลาดสายล่าง ระยอง）",
+      "priority": "順路可去 👍",
+      "dates": "12/10,12/11,12/12,12/13",
+      "description": "在地夜市與小吃攤；適合自由活動時順路逛",
+      "hours": "Google Maps 截圖標示24小時；攤商實際營業時段待確認",
+      "price": "",
+      "address": "Sai Lang Road, Mueang Rayong（精確門牌待核實）",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Sai-Lang%20Night%20Market%EF%BC%88%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%AD%E0%B8%87%EF%BC%89%20Rayong%20Thailand"
+    },
+    {
+      "area": "羅勇",
+      "category": "咖啡甜點",
+      "name": "จันปังนมสด（Chan Pang Nom Sod）",
+      "priority": "順路可去 👍",
+      "dates": "12/10,12/11,12/12,12/13",
+      "description": "泰式烤吐司、鮮奶飲品、沾醬吐司；適合甜點宵夜",
+      "hours": "截圖週一13:00開始；完整時段待確認",
+      "price": "截圖 ฿1–200",
+      "address": "Sophon 4, Tambon Map Ta Phut, Mueang Rayong, Rayong 21150",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B1%E0%B8%87%E0%B8%99%E0%B8%A1%E0%B8%AA%E0%B8%94%EF%BC%88Chan%20Pang%20Nom%20Sod%EF%BC%89%20Rayong%20Thailand"
+    },
+    {
+      "area": "中國城／Song Wat／Talat Noi",
+      "category": "咖啡甜點",
+      "name": "Wanjai Cafe House（Wanjai House @SongWat / 甜點咖啡）",
+      "priority": "順路可去 👍",
+      "dates": "12/16",
+      "description": "招牌芒果糯米飯、芒果冰沙、手作泰式甜點、特調咖啡。",
+      "hours": "10:00–19:00（彈性備選）",
+      "price": "",
+      "address": "1190 Song Wat Rd",
+      "map_url": "https://www.google.com/maps/place/?q=place_id:ChIJc6U4fgCZ4jARy46zpKKFb3c"
+    },
+    {
+      "area": "中國城／Song Wat／Talat Noi",
+      "category": "美食餐廳",
+      "name": "Rong Klan Nuea（โรงกลั่นเนื้อ / 松瓦路燉牛肉麵）",
+      "priority": "順路可去 👍",
+      "dates": "12/16",
+      "description": "燉牛肉、牛筋、牛舌、招牌牛肉麵、牛雜湯；牛腩軟嫩湯頭濃郁。",
+      "hours": "10:00–20:00（彈性備選）",
+      "price": "",
+      "address": "937 939 Song Wat Rd",
+      "map_url": "https://www.google.com/maps/place/?q=place_id:ChIJd6ADLcOZ4jARi3zHoEpvWI8"
+    },
+    {
+      "area": "Siam／Chit Lom",
+      "category": "咖啡甜點",
+      "name": "Kanomsiam Siam Paragon（ขนมสยาม สยามพารากอน）",
+      "priority": "想去 ⭐",
+      "dates": "12/15",
+      "description": "招牌熱騰騰班蘭葉小糕點（Khanom Krok Bai Toey），外脆內軟香氣濃郁。",
+      "hours": "10:00–22:00（順路品嚐）",
+      "price": "",
+      "address": "Siam Paragon G 樓美食街（Gourmet Eats）",
+      "map_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7c1QQqOZ4jARG6a6kPo38oo"
     }
   ]
 }
