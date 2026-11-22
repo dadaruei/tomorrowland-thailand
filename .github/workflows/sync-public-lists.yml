@@ -1,0 +1,47 @@
+name: Sync public collection and shopping
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,37 * * * *'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch and validate public lists
+        env:
+          PUBLIC_LISTS_FEED_URL: ${{ secrets.PUBLIC_LISTS_FEED_URL }}
+        run: |
+          python3 - <<'PY'
+          import json,os,urllib.request,pathlib
+          url=os.environ.get('PUBLIC_LISTS_FEED_URL','')
+          if not url.startswith('https://'):
+              raise SystemExit('Missing PUBLIC_LISTS_FEED_URL HTTPS secret')
+          req=urllib.request.Request(url,headers={'User-Agent':'tml-public-list-sync/1.0'})
+          with urllib.request.urlopen(req,timeout=45) as resp:
+              payload=json.load(resp)
+          collections=payload.get('collection')
+          shopping=payload.get('shopping')
+          if not isinstance(collections,list) or not isinstance(shopping,list):
+              raise SystemExit('Invalid list feed structure; refusing overwrite')
+          if not (1 <= len(collections) <= 5000 and 1 <= len(shopping) <= 5000):
+              raise SystemExit('Unexpected list counts; refusing overwrite')
+          if any(not isinstance(x,dict) or not x.get('name') or not x.get('area') for x in collections):
+              raise SystemExit('Invalid collection entries')
+          if any(not isinstance(x,dict) or not x.get('name') for x in shopping):
+              raise SystemExit('Invalid shopping entries')
+          for filename,items in [('collection.json',collections),('shopping.json',shopping)]:
+              pathlib.Path(filename).write_text(json.dumps({'schema_version':1,'source':'google-sheets','updated':payload.get('updated',''),'items':items},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('Validated collection:',len(collections),'shopping:',len(shopping))
+          PY
+      - name: Commit changed public data only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add collection.json shopping.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Sync public collection and shopping'
+            git push
+          fi
