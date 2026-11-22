@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-22 20:56",
+  "updated": "2026-11-22 21:48",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -746,6 +746,18 @@
       "price": "",
       "address": "Siam Paragon G 樓美食街（Gourmet Eats）",
       "map_url": "https://www.google.com/maps/place/?q=place_id:ChIJ7c1QQqOZ4jARG6a6kPo38oo"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "購物伴手禮",
+      "name": "源順 Nguan Soon No.1 Hand Brand（ง่วนสูน พริกไทยตรามือที่ 1）",
+      "priority": "必去 🔥",
+      "dates": "12/16,12/17",
+      "description": "泰國老字號香料店；胡椒粉、香料、調味料與伴手禮",
+      "hours": "週一 07:30 開始營業（截圖）；完整營業時間待確認",
+      "price": "",
+      "address": "曼谷唐人街／龍蓮寺附近（確切門牌待確認）",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Nguan+Soon+No.1+Hand+Brand+Bangkok"
     }
   ]
 }
