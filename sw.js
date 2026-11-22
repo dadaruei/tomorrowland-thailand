@@ -1,14 +1,11 @@
-// Tomorrowland Thailand — offline shell v3
-const CACHE = 'tml-journey-offline-v3';
-const APP_SHELL = ['./', './index.html', './tailwind.css', './data.json'];
+// Tomorrowland Thailand — offline shell v10
+const CACHE = 'tml-journey-offline-v13-production-sync';
+const APP_SHELL = ['./', './index.html', './tailwind.css', './cover-background.jpg', './cover-emblem.png', './data.json', './lists.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'];
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    // CSS/HTML are essential. Do not activate an incomplete offline shell.
-    await cache.addAll(['./index.html', './tailwind.css']);
-    // The JSON may be briefly unavailable during a sync; preserve the existing
-    // localStorage copy in that case and retry when online.
-    await Promise.allSettled(['./', './data.json'].map(url => cache.add(url)));
+    await cache.addAll(['./index.html', './tailwind.css', './cover-background.jpg', './cover-emblem.png']);
+    await Promise.allSettled(['./', './data.json', './lists.json', './collection.json', './shopping.json', './tera_rex_bangkok_guide.html'].map(url => cache.add(url)));
     await self.skipWaiting();
   })());
 });
@@ -30,13 +27,12 @@ self.addEventListener('fetch', event => {
     try {
       const response = await fetch(request);
       if (response.ok && response.type === 'basic') {
-        // Keep only one canonical copy of data.json, ignoring ?ts= cache-busters.
-        const key = url.pathname.endsWith('/data.json') ? new URL('./data.json', self.registration.scope).href : request;
+        const key = (url.pathname.endsWith('/data.json') || (/\/(?:lists|collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
         await cache.put(key, response.clone());
       }
       return response;
     } catch (_) {
-      const key = url.pathname.endsWith('/data.json') ? new URL('./data.json', self.registration.scope).href : request;
+      const key = (url.pathname.endsWith('/data.json') || (/\/(?:lists|collection|shopping)\.json$/.test(url.pathname))) ? new URL('./'+url.pathname.split('/').pop(), self.registration.scope).href : request;
       return await cache.match(key, {ignoreSearch: true}) ||
         (request.mode === 'navigate' ? await cache.match('./index.html') : undefined) ||
         Response.error();
