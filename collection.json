@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-23 09:16",
+  "updated": "2026-11-23 10:31",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -806,6 +806,18 @@
       "price": "",
       "address": "Canvas Ploenchit Building, Unit 601, 546 Phloen Chit Rd, Bangkok 10330",
       "map_url": "https://www.google.com/maps/search/?api=1&query=Stolen+Stores+Canvas+Ploenchit+Bangkok"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "購物伴手禮",
+      "name": "GRANDFATHER（CentralWorld）",
+      "priority": "未設定",
+      "dates": "12/15",
+      "description": "泰國男裝／潮流服飾品牌；影片列為潮牌集合店之一",
+      "hours": "待確認",
+      "price": "",
+      "address": "CentralWorld 4F, Bangkok（商場目錄資訊）",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=GRANDFATHER+CentralWorld+Bangkok"
     }
   ]
 }
