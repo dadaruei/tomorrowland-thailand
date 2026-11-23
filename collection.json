@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-23 06:40",
+  "updated": "2026-11-23 08:03",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -758,6 +758,54 @@
       "price": "",
       "address": "曼谷唐人街／龍蓮寺附近（確切門牌待確認）",
       "map_url": "https://www.google.com/maps/search/?api=1&query=Nguan+Soon+No.1+Hand+Brand+Bangkok"
+    },
+    {
+      "area": "Siam／Chit Lom",
+      "category": "購物伴手禮",
+      "name": "CARNIVAL（Siam Square）",
+      "priority": "未設定",
+      "dates": "12/15",
+      "description": "泰國潮流球鞋與街頭服飾選物、聯名商品",
+      "hours": "每日 11:00–21:00",
+      "price": "",
+      "address": "428 Siam Square Soi 7, Pathum Wan, Bangkok 10330",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Carnival+428+Siam+Square+Soi+7+Bangkok"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "購物伴手禮",
+      "name": "HUMAN MADE BANGKOK",
+      "priority": "未設定",
+      "dates": "12/15",
+      "description": "日本 NIGO 創立街頭品牌；曼谷常設店、限定服飾與配件",
+      "hours": "每日 10:00–21:00（地圖資訊）",
+      "price": "",
+      "address": "Central Embassy 2F, 1031 Phloen Chit Rd, Pathum Wan, Bangkok 10330",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=HUMAN+MADE+BANGKOK+Central+Embassy"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "購物伴手禮",
+      "name": "SIWILAI STORE",
+      "priority": "未設定",
+      "dates": "12/15",
+      "description": "曼谷設計師品牌與國際潮流選物；服飾、球鞋及配件",
+      "hours": "每日 10:00–21:00（地圖資訊）",
+      "price": "",
+      "address": "Central Embassy 2F, 1031 Phloen Chit Rd, Pathum Wan, Bangkok 10330",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=SIWILAI+Store+Central+Embassy+Bangkok"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "購物伴手禮",
+      "name": "Stolen Stores（Stolen Sala）",
+      "priority": "未設定",
+      "dates": "不限日期",
+      "description": "泰國設計服飾選物、女性時裝；樓上有 Stolen Sala 空間",
+      "hours": "每日 10:00–19:00（地圖資訊）",
+      "price": "",
+      "address": "Canvas Ploenchit Building, Unit 601, 546 Phloen Chit Rd, Bangkok 10330",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Stolen+Stores+Canvas+Ploenchit+Bangkok"
     }
   ]
 }
