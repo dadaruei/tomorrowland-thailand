@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-23 08:03",
+  "updated": "2026-11-23 09:16",
   "items": [
     {
       "store": "Siam／Chit Lom／One Bangkok",
@@ -328,6 +328,46 @@
       "name": "MALI 榴槤味椰香煉奶",
       "description": "MALI Easy Squeeze 榴槤口味椰香煉奶；可搭配吐司、糯米飯、雪糕、刨冰",
       "priority": "想買 ⭐",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "泰國美妝／藥妝通路",
+      "name": "Garnier Bright Complete Vitamin C 洗面乳",
+      "description": "影片銀色幻彩包裝；維他命C提亮潔面訴求",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "泰國美妝／藥妝通路",
+      "name": "Garnier Men TurboBright 男士面膜",
+      "description": "黑色小包裝男士面膜；影片主打提亮",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Platinum Pop／待確認通路",
+      "name": "Frozen Collagen Plus+ 2 in 1 Whitening",
+      "description": "口服膠原蛋白補充品；影片藍色包裝、兩顆膠囊",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "影片標示 ฿95",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Platinum Pop／待確認通路",
+      "name": "Frozen Perfect Cover Tone Up Body Cream",
+      "description": "120g 身體潤色提亮霜；影片展示藍、黃兩款",
+      "priority": "未設定",
       "quantity": "",
       "price": "",
       "status": "未購買",
