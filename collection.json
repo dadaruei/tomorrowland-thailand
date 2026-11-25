@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-25 07:20",
+  "updated": "2026-11-25 08:55",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -818,6 +818,42 @@
       "price": "",
       "address": "CentralWorld 4F, Bangkok（商場目錄資訊）",
       "map_url": "https://www.google.com/maps/search/?api=1&query=GRANDFATHER+CentralWorld+Bangkok"
+    },
+    {
+      "area": "曼谷其他區域",
+      "category": "美食餐廳",
+      "name": "Ann Tha Din Daeng（แอน ท่าดินแดง）",
+      "priority": "未設定",
+      "dates": "12/16,12/17",
+      "description": "米其林必比登；椒鹽大蝦、甜辣醬九層塔炒蛤蜊、蟹肉煎蛋",
+      "hours": "週三至日 10:30–20:00；週一、二公休",
+      "price": "฿฿（米其林價位級別）",
+      "address": "167 Tha Din Daeng Rd, Khlong San, Bangkok 10600",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Ann%20Tha%20Din%20Daeng%20167%20Tha%20Din%20Daeng%20Bangkok"
+    },
+    {
+      "area": "Siam／Chit Lom",
+      "category": "美食餐廳",
+      "name": "Kate Teaw Boat Noodles（Siam Square Soi 3）",
+      "priority": "未設定",
+      "dates": "12/15",
+      "description": "泰式豬肉／牛肉船麵、打拋飯、豬油渣；可詢問不辣及不加血",
+      "hours": "每日 11:00–22:00；地圖另列至22:30",
+      "price": "฿101–250（OpenRice 參考價位）",
+      "address": "266/1 Siam Square Soi 3, Pathum Wan, Bangkok 10330",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Kate%20Teaw%20Boat%20Noodles%20266%2F1%20Siam%20Square%20Soi%203%20Bangkok"
+    },
+    {
+      "area": "Asok／Phrom Phong",
+      "category": "美食餐廳",
+      "name": "The Secret Mookrata Sukhumvit 22",
+      "priority": "未設定",
+      "dates": "12/09",
+      "description": "泰式銅盤烤肉火鍋、露營風半戶外座位；豬肉、海鮮套餐",
+      "hours": "每日 17:00–翌日05:00（部分來源列16:00開）",
+      "price": "豬肉套餐 ฿399、海鮮套餐 ฿499（2026/11參考）",
+      "address": "Near Silom Massage, Sukhumvit Soi 22, Khlong Toei, Bangkok 10110",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=The%20Secret%20Mookrata%20Sukhumvit%2022%20Bangkok"
     }
   ]
 }
