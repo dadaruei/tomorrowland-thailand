@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-25 18:29",
+  "updated": "2026-11-25 19:35",
   "items": [
     {
       "area": "Asok／Phrom Phong",
@@ -854,6 +854,18 @@
       "price": "豬肉套餐 ฿399、海鮮套餐 ฿499（2026/11參考）",
       "address": "Near Silom Massage, Sukhumvit Soi 22, Khlong Toei, Bangkok 10110",
       "map_url": "https://www.google.com/maps/search/?api=1&query=The%20Secret%20Mookrata%20Sukhumvit%2022%20Bangkok"
+    },
+    {
+      "area": "中國城／Song Wat／Talat Noi",
+      "category": "咖啡甜點",
+      "name": "Littlep.bkk（ขนมครกใบเตย）",
+      "priority": "未設定",
+      "dates": "12/14,12/16,12/17",
+      "description": "泰式斑蘭葉小鬆糕、椰香傳統點心",
+      "hours": "ICONSIAM 每日10:00–21:00（OpenRice）；Talat Noi 截圖顯示週四08:00開",
+      "price": "ICONSIAM ฿100以下（OpenRice價位帶）",
+      "address": "7 Soi Chareonkrung 22, Talat Noi, Bangkok 10100；另 ICONSIAM G樓",
+      "map_url": "https://www.google.com/maps/search/?api=1&query=Littlep.bkk%20Talat%20Noi%20Bangkok"
     }
   ]
 }

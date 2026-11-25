@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "google-sheets",
-  "updated": "2026-11-25 18:29",
+  "updated": "2026-11-25 19:35",
   "items": [
     {
       "store": "Siam／Chit Lom／One Bangkok",
@@ -367,6 +367,36 @@
       "store": "Platinum Pop／待確認通路",
       "name": "Frozen Perfect Cover Tone Up Body Cream",
       "description": "120g 身體潤色提亮霜；影片展示藍、黃兩款",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路（待確認）",
+      "name": "Honeyful 蜂蜜椰子脆捲－檸檬巧克力",
+      "description": "Honey Coconut Crispy Roll with Lemon Chocolate；60g",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "7-Eleven／Big C 通路（待確認）",
+      "name": "Clorets 葡萄無糖薄荷涼糖",
+      "description": "Sugar Free Mints Grape Freeze；葡萄冰涼口味",
+      "priority": "未設定",
+      "quantity": "",
+      "price": "",
+      "status": "未購買",
+      "url": ""
+    },
+    {
+      "store": "Big C／超市通路（待確認）",
+      "name": "Monori 酥脆蝦頰餅",
+      "description": "Crispy Shrimp Cheek Snack；黃色海鹽烤蝦、紅色冬蔭功（22g）",
       "priority": "未設定",
       "quantity": "",
       "price": "",
